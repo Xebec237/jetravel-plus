@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JeTravel+ Score Canada</title>
+<meta name="description" content="Calculez votre score Entrée express (CRS), obtenez un plan d'amélioration détaillé, créez un CV canadien et envoyez vos candidatures.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar no-print">
+  <div class="brand">JeTravel<span>+</span> <small>Canada</small></div>
+  <nav class="tabs" id="tabs">
+    <button type="button" data-tab="eval" class="active">1. Évaluation</button>
+    <button type="button" data-tab="result">2. Score &amp; plan</button>
+    <button type="button" data-tab="cv">3. CV canadien</button>
+    <button type="button" data-tab="jobs">4. Emploi &amp; lettre</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ 1. ÉVALUATION ============ -->
+<section id="tab-eval" class="tab active">
+  <div class="intro">
+    <h1>Votre score Entrée express (CRS)</h1>
+    <p>Répondez aux questions : nous calculons votre score selon la grille officielle du Système de classement global d'IRCC, puis nous vous donnons un plan détaillé pour l'augmenter.</p>
+  </div>
+
+  <div class="card">
+    <div class="progress"><div id="progress-bar"></div></div>
+    <p class="step-label" id="step-label"></p>
+
+    <form id="eval-form" autocomplete="off" novalidate>
+
+      <fieldset class="step" data-step="family" data-title="Situation familiale">
+        <legend>Quelle est votre situation familiale ?</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="married" value="no" checked> Célibataire, divorcé(e), séparé(e) ou veuf/veuve</label>
+          <label class="choice"><input type="radio" name="married" value="yes"> Marié(e) ou conjoint(e) de fait</label>
+        </div>
+        <div data-show-if="married=yes" class="sub">
+          <p class="q">Votre conjoint(e) est-il/elle citoyen(ne) canadien(ne) ou résident(e) permanent(e) ?</p>
+          <div class="choices inline">
+            <label class="choice"><input type="radio" name="spouseCanadian" value="no" checked> Non</label>
+            <label class="choice"><input type="radio" name="spouseCanadian" value="yes"> Oui</label>
+          </div>
+          <div data-show-if="spouseCanadian=no">
+            <p class="q">Votre conjoint(e) vous accompagnera-t-il/elle au Canada ?</p>
+            <div class="choices inline">
+              <label class="choice"><input type="radio" name="spouseComing" value="yes" checked> Oui</label>
+              <label class="choice"><input type="radio" name="spouseComing" value="no"> Non</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="age" data-title="Âge" hidden>
+        <legend>Quel est votre âge ?</legend>
+        <label class="field narrow"><span>Âge (en années)</span>
+          <input type="number" name="age" min="16" max="80" required inputmode="numeric" placeholder="ex. 31">
+        </label>
+        <p class="help">Les points d'âge sont maximaux entre 20 et 29 ans, puis diminuent chaque année jusqu'à 45 ans.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="edu" data-title="Études" hidden>
+        <legend>Quel est votre plus haut niveau d'études ?</legend>
+        <label class="field"><span>Niveau d'études</span>
+          <select name="edu" required>
+            <option value="">— Choisir —</option>
+            <option value="none">Moins qu'un diplôme d'études secondaires</option>
+            <option value="secondary">Diplôme d'études secondaires (baccalauréat / bac au lycée)</option>
+            <option value="oneYear">Diplôme post-secondaire d'un an</option>
+            <option value="twoYear">Diplôme post-secondaire de deux ans (BTS, DUT…)</option>
+            <option value="bachelor">Licence / bachelor ou diplôme de 3 ans ou plus</option>
+            <option value="twoOrMore">Deux diplômes ou plus, dont un de 3 ans ou plus</option>
+            <option value="master">Master / maîtrise ou diplôme professionnel (médecine, droit…)</option>
+            <option value="phd">Doctorat (PhD)</option>
+          </select>
+        </label>
+        <p class="q">Avez-vous déjà fait évaluer vos diplômes (EDE / ECA, par exemple par WES) ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="hasEca" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="hasEca" value="yes"> Oui</label>
+        </div>
+        <label class="field"><span>Avez-vous étudié au Canada ?</span>
+          <select name="canEdu">
+            <option value="0">Non</option>
+            <option value="1">Oui, un diplôme d'un ou deux ans</option>
+            <option value="2">Oui, un diplôme de trois ans ou plus (ou master/doctorat)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="step" data-step="en" data-title="Anglais" hidden>
+        <legend>Résultats de test d'anglais</legend>
+        <label class="field"><span>Test passé (résultat de moins de 2 ans)</span>
+          <select name="enTest">
+            <option value="none">Aucun test d'anglais</option>
+            <option value="ielts">IELTS General Training</option>
+            <option value="celpip">CELPIP-General</option>
+            <option value="clb">Je connais mes niveaux CLB</option>
+          </select>
+        </label>
+        <p class="help" data-hint="en"></p>
+        <div class="lang-grid" data-prefix="en"></div>
+      </fieldset>
+
+      <fieldset class="step" data-step="fr" data-title="Français" hidden>
+        <legend>Résultats de test de français</legend>
+        <label class="field"><span>Test passé (résultat de moins de 2 ans)</span>
+          <select name="frTest">
+            <option value="none">Aucun test de français</option>
+            <option value="tef">TEF Canada</option>
+            <option value="tcf">TCF Canada</option>
+            <option value="clb">Je connais mes niveaux NCLC</option>
+          </select>
+        </label>
+        <p class="help" data-hint="fr"></p>
+        <div class="lang-grid" data-prefix="fr"></div>
+        <p class="help">Le français rapporte jusqu'à 50 points bonus et donne accès aux tirages réservés aux francophones.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="work" data-title="Expérience de travail" hidden>
+        <legend>Votre expérience de travail qualifiée</legend>
+        <p class="help">Emplois rémunérés, au moins 30 h/semaine (ou l'équivalent à temps partiel), dans un métier de niveau FEER 0, 1, 2 ou 3 de la CNP.</p>
+        <label class="field"><span>Expérience au Canada (10 dernières années)</span>
+          <select name="cdnWork">
+            <option value="0">Aucune ou moins d'un an</option>
+            <option value="1">1 an</option>
+            <option value="2">2 ans</option>
+            <option value="3">3 ans</option>
+            <option value="4">4 ans</option>
+            <option value="5">5 ans ou plus</option>
+          </select>
+        </label>
+        <label class="field"><span>Expérience hors du Canada (10 dernières années)</span>
+          <select name="forWork">
+            <option value="0">Aucune ou moins d'un an</option>
+            <option value="1">1 an</option>
+            <option value="2">2 ans</option>
+            <option value="3">3 ans ou plus</option>
+          </select>
+        </label>
+        <p class="q">Avez-vous un certificat de qualification d'une province canadienne dans un métier spécialisé ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="tradeCert" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="tradeCert" value="yes"> Oui</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="spouse" data-title="Votre conjoint(e)" hidden>
+        <legend>Profil de votre conjoint(e)</legend>
+        <label class="field"><span>Plus haut niveau d'études du conjoint</span>
+          <select name="spEdu">
+            <option value="none">Moins qu'un diplôme d'études secondaires</option>
+            <option value="secondary">Diplôme d'études secondaires</option>
+            <option value="oneYear">Diplôme post-secondaire d'un an</option>
+            <option value="twoYear">Diplôme post-secondaire de deux ans</option>
+            <option value="bachelor">Licence / diplôme de 3 ans ou plus</option>
+            <option value="twoOrMore">Deux diplômes ou plus, dont un de 3 ans ou plus</option>
+            <option value="master">Master ou diplôme professionnel</option>
+            <option value="phd">Doctorat</option>
+          </select>
+        </label>
+        <p class="q">Les diplômes du conjoint ont-ils été évalués (EDE) ou obtenus au Canada ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="spEca" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="spEca" value="yes"> Oui</label>
+        </div>
+        <label class="field"><span>Test de langue du conjoint</span>
+          <select name="spTest">
+            <option value="none">Aucun test</option>
+            <option value="ielts">IELTS General Training</option>
+            <option value="celpip">CELPIP-General</option>
+            <option value="tef">TEF Canada</option>
+            <option value="tcf">TCF Canada</option>
+            <option value="clb">Je connais ses niveaux CLB / NCLC</option>
+          </select>
+        </label>
+        <p class="help" data-hint="sp"></p>
+        <div class="lang-grid" data-prefix="sp"></div>
+        <label class="field"><span>Expérience de travail du conjoint au Canada</span>
+          <select name="spCdnWork">
+            <option value="0">Aucune ou moins d'un an</option>
+            <option value="1">1 an</option>
+            <option value="2">2 ans</option>
+            <option value="3">3 ans</option>
+            <option value="4">4 ans</option>
+            <option value="5">5 ans ou plus</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset class="step" data-step="extra" data-title="Autres facteurs et projet" hidden>
+        <legend>Autres facteurs</legend>
+        <p class="q">Avez-vous un frère ou une sœur au Canada, citoyen(ne) ou résident(e) permanent(e), âgé(e) de 18 ans ou plus ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="sibling" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="sibling" value="yes"> Oui</label>
+        </div>
+        <p class="q">Avez-vous déjà un certificat de nomination d'une province (PNP) ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="pnp" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="pnp" value="yes"> Oui</label>
+        </div>
+        <p class="q">Avez-vous une offre d'emploi d'un employeur canadien ?</p>
+        <div class="choices inline">
+          <label class="choice"><input type="radio" name="jobOffer" value="no" checked> Non</label>
+          <label class="choice"><input type="radio" name="jobOffer" value="yes"> Oui</label>
+        </div>
+        <label class="field"><span>Votre métier (pour la recherche d'emploi et le CV)</span>
+          <input type="text" name="jobTitle" placeholder="ex. Comptable, Infirmière, Développeur web">
+        </label>
+        <label class="field"><span>Province visée</span>
+          <select name="province">
+            <option value="">Pas encore décidé</option>
+            <option value="ON">Ontario</option>
+            <option value="QC">Québec</option>
+            <option value="BC">Colombie-Britannique</option>
+            <option value="AB">Alberta</option>
+            <option value="MB">Manitoba</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NS">Nouvelle-Écosse</option>
+            <option value="NB">Nouveau-Brunswick</option>
+            <option value="PE">Île-du-Prince-Édouard</option>
+            <option value="NL">Terre-Neuve-et-Labrador</option>
+            <option value="YT">Yukon</option>
+            <option value="NT">Territoires du Nord-Ouest</option>
+            <option value="NU">Nunavut</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div class="wizard-nav">
+        <button type="button" class="btn ghost" id="prev">← Précédent</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn" id="next">Suivant →</button>
+        <button type="submit" class="btn primary" id="calc" hidden>Calculer mon score</button>
+      </div>
+    </form>
+  </div>
+  <p class="disclaimer">Estimation basée sur la grille CRS publiée par IRCC. Seul l'outil officiel d'IRCC et votre profil Entrée express font foi.</p>
+</section>
+
+<!-- ============ 2. RÉSULTAT ET PLAN ============ -->
+<section id="tab-result" class="tab">
+  <div id="result-root">
+    <div class="card empty">
+      <h2>Pas encore de score</h2>
+      <p>Complétez d'abord l'évaluation pour obtenir votre score et votre plan personnalisé.</p>
+      <button type="button" class="btn primary" data-goto="eval">Commencer l'évaluation</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. CV CANADIEN ============ -->
+<section id="tab-cv" class="tab">
+  <div class="intro no-print">
+    <h1>Votre CV au format canadien</h1>
+    <p>Remplissez les champs : l'aperçu se met à jour en direct. Ensuite, exportez-le en PDF pour l'envoyer aux employeurs.</p>
+  </div>
+  <div class="split">
+    <div class="no-print">
+      <div class="card tips">
+        <h3>Les règles du CV canadien</h3>
+        <ul>
+          <li><b>Pas de photo</b>, pas d'âge ni de date de naissance, pas de situation familiale, de nationalité ni de religion.</li>
+          <li><b>2 pages maximum</b>, ordre antichronologique (le plus récent en premier).</li>
+          <li>Des <b>réalisations chiffrées</b> plutôt que des tâches : « Réduit les délais de 30 % » plutôt que « Responsable des délais ».</li>
+          <li>Commencez chaque point par un <b>verbe d'action</b> (Géré, Conçu, Formé, Augmenté…).</li>
+          <li><b>Adaptez le CV à chaque offre</b> : reprenez les mots-clés de l'annonce (les logiciels de tri ATS les recherchent).</li>
+          <li>Indiquez <b>l'équivalence canadienne</b> de vos diplômes (EDE / WES) et votre niveau de langue (CLB / NCLC).</li>
+          <li>Mise en page simple : pas de tableaux, d'images ni de colonnes compliquées.</li>
+        </ul>
+      </div>
+      <div class="card" id="cv-form">
+        <div class="row">
+          <label class="field"><span>Langue du CV</span>
+            <select data-cv="lang"><option value="fr">Français</option><option value="en">Anglais</option></select>
+          </label>
+        </div>
+        <h3>Coordonnées</h3>
+        <div class="row">
+          <label class="field"><span>Nom complet</span><input data-cv="name" placeholder="Prénom Nom"></label>
+          <label class="field"><span>Titre professionnel</span><input data-cv="title" placeholder="ex. Comptable CPA | Analyste financier"></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Courriel</span><input data-cv="email" type="email" placeholder="prenom.nom@gmail.com"></label>
+          <label class="field"><span>Téléphone (avec indicatif)</span><input data-cv="phone" placeholder="+237 6 00 00 00 00"></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Ville, pays</span><input data-cv="city" placeholder="Douala, Cameroun (disponible pour relocalisation à Toronto)"></label>
+          <label class="field"><span>Profil LinkedIn</span><input data-cv="linkedin" placeholder="linkedin.com/in/votre-nom"></label>
+        </div>
+        <h3>Profil professionnel</h3>
+        <label class="field"><span>3 à 4 lignes : qui vous êtes, années d'expérience, spécialité, valeur ajoutée</span>
+          <textarea data-cv="summary" rows="4" placeholder="Comptable avec 6 ans d'expérience en audit et en fiscalité, reconnu pour…"></textarea>
+        </label>
+        <h3>Compétences clés</h3>
+        <label class="field"><span>Une compétence par ligne (8 à 12)</span>
+          <textarea data-cv="skills" rows="5" placeholder="Analyse financière&#10;Excel avancé (tableaux croisés, macros)&#10;SAP / QuickBooks"></textarea>
+        </label>
+        <h3>Expérience professionnelle</h3>
+        <div id="cv-exp"></div>
+        <button type="button" class="btn ghost small" id="add-exp">+ Ajouter une expérience</button>
+        <h3>Formation</h3>
+        <div id="cv-edu"></div>
+        <button type="button" class="btn ghost small" id="add-edu">+ Ajouter un diplôme</button>
+        <h3>Langues, certifications, bénévolat</h3>
+        <label class="field"><span>Langues (une par ligne)</span>
+          <textarea data-cv="languages" rows="2" placeholder="Français — langue maternelle&#10;Anglais — CLB 9 (IELTS General)"></textarea>
+        </label>
+        <label class="field"><span>Certifications et formations (une par ligne)</span>
+          <textarea data-cv="certs" rows="2" placeholder="Google Data Analytics Certificate (2025)"></textarea>
+        </label>
+        <label class="field"><span>Bénévolat (très apprécié au Canada, une ligne par activité)</span>
+          <textarea data-cv="volunteer" rows="2" placeholder="Trésorière bénévole — Association des jeunes, Douala (2022–2024)"></textarea>
+        </label>
+      </div>
+    </div>
+    <div>
+      <div class="cv-actions no-print">
+        <button type="button" class="btn primary" id="cv-print">Télécharger en PDF / Imprimer</button>
+        <button type="button" class="btn ghost" id="cv-copy">Copier le texte</button>
+        <button type="button" class="btn ghost" data-goto="jobs">Passer à la recherche d'emploi →</button>
+      </div>
+      <p class="help no-print">Pour un PDF : cliquez sur « Télécharger », puis choisissez « Enregistrer au format PDF » comme imprimante.</p>
+      <div class="cv-paper" id="cv-preview"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. EMPLOI ET LETTRE ============ -->
+<section id="tab-jobs" class="tab">
+  <div class="intro">
+    <h1>Trouver un emploi et postuler</h1>
+    <p>Cherchez des offres sur les sites canadiens, générez une lettre de motivation adaptée à partir de votre CV, puis envoyez-la directement.</p>
+  </div>
+
+  <div class="card">
+    <h2>1. Chercher des offres</h2>
+    <div class="row">
+      <label class="field"><span>Poste recherché</span><input id="js-q" placeholder="ex. Comptable"></label>
+      <label class="field"><span>Ville ou province</span><input id="js-l" placeholder="ex. Ottawa, ON"></label>
+    </div>
+    <div class="link-buttons" id="js-links"></div>
+    <p class="help">Astuce : sur le Guichet-Emplois / Job Bank, l'option « Embauche de candidats étrangers » montre les employeurs ouverts aux candidats hors Canada. Trouvez aussi votre code CNP sur <a href="https://noc.esdc.gc.ca/" target="_blank" rel="noopener">noc.esdc.gc.ca</a> pour utiliser les bons intitulés de poste.</p>
+  </div>
+
+  <div class="split">
+    <div class="card">
+      <h2>2. Votre lettre de motivation</h2>
+      <p class="help">La lettre reprend automatiquement votre nom, vos coordonnées, vos réalisations et vos compétences depuis l'onglet CV.</p>
+      <div class="row">
+        <label class="field"><span>Langue</span><select data-lt="lang"><option value="fr">Français</option><option value="en">Anglais</option></select></label>
+        <label class="field"><span>Où avez-vous vu l'offre ?</span><input data-lt="source" placeholder="Guichet-Emplois, LinkedIn, Indeed…"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Poste visé</span><input data-lt="job" placeholder="ex. Comptable principal"></label>
+        <label class="field"><span>Numéro de référence (si indiqué)</span><input data-lt="ref" placeholder="ex. 2026-145"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Entreprise</span><input data-lt="company" placeholder="ex. Desjardins"></label>
+        <label class="field"><span>Ville de l'entreprise</span><input data-lt="companyCity" placeholder="ex. Lévis (Québec)"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Nom du recruteur (si connu)</span><input data-lt="recruiter" placeholder="ex. Mme Julie Tremblay"></label>
+        <label class="field"><span>Courriel du recruteur</span><input data-lt="email" type="email" placeholder="rh@entreprise.ca"></label>
+      </div>
+      <label class="field"><span>Exigences principales de l'offre (copiez 2 ou 3 éléments de l'annonce)</span>
+        <textarea data-lt="reqs" rows="2" placeholder="la maîtrise des normes IFRS, la gestion d'une équipe, l'anglais fonctionnel"></textarea>
+      </label>
+      <label class="field"><span>Pourquoi cette entreprise ? (1 ou 2 phrases sincères)</span>
+        <textarea data-lt="motivation" rows="2" placeholder="Votre engagement envers les communautés locales et votre croissance au Québec…"></textarea>
+      </label>
+      <label class="field"><span>Votre statut au Canada</span>
+        <select data-lt="status">
+          <option value="ee">En démarche de résidence permanente (Entrée express)</option>
+          <option value="lmia">Ouvert à un parrainage par permis de travail (EIMT / Mobilité francophone)</option>
+          <option value="wp">Titulaire d'un permis de travail au Canada</option>
+          <option value="pr">Résident(e) permanent(e) / citoyen(ne)</option>
+          <option value="none">Ne pas mentionner</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <div class="card">
+        <h2>3. Relire et envoyer</h2>
+        <textarea id="letter-out" class="letter" rows="22" spellcheck="true"></textarea>
+        <p class="help">Vous pouvez modifier le texte directement. Il est régénéré si vous changez un champ à gauche.</p>
+        <div class="link-buttons">
+          <button type="button" class="btn primary" id="lt-gmail">Envoyer avec Gmail</button>
+          <button type="button" class="btn" id="lt-mail">Envoyer avec mon application courriel</button>
+          <button type="button" class="btn ghost" id="lt-copy">Copier la lettre</button>
+          <button type="button" class="btn ghost" id="lt-track">Ajouter à mon suivi</button>
+        </div>
+        <p class="note">📎 N'oubliez pas de joindre votre CV en PDF (onglet 3) au courriel. Si l'offre demande de postuler sur un site (LinkedIn, Guichet-Emplois, portail de l'employeur), collez-y la lettre copiée.</p>
+      </div>
+      <div class="card">
+        <h2>Suivi de mes candidatures</h2>
+        <div id="tracker"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="no-print">
+  <p>JeTravel+ — outil d'orientation. Utilisez toujours les sites officiels (canada.ca) pour vos démarches : ils sont gratuits.</p>
+</footer>
+
+<script src="js/util.js"></script>
+<script src="js/data.js"></script>
+<script src="js/crs.js"></script>
+<script src="js/plan.js"></script>
+<script src="js/cv.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
