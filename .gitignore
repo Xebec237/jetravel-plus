@@ -1,0 +1,5 @@
+
+# Secrets locaux (ne jamais publier)
+.env
+supabase/.temp/
+supabase/cron.local.sql

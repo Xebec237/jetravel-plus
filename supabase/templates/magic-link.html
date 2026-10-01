@@ -1,0 +1,20 @@
+<!--
+  Modèle du courriel de connexion (Supabase → Authentication → Emails → Templates → « Magic Link »).
+  Objet conseillé : Votre lien de connexion JeTravel+
+-->
+<!doctype html>
+<html lang="fr">
+<body style="margin:0;background:#fffcf9;font-family:Arial,sans-serif;color:#33291f">
+  <div style="max-width:520px;margin:0 auto;padding:32px 20px">
+    <p style="font-size:24px;font-weight:bold;margin:0 0 20px">JeTravel<span style="color:#c8553d">+</span></p>
+    <p style="font-size:16px;line-height:1.6">Bonjour,</p>
+    <p style="font-size:16px;line-height:1.6">Cliquez sur le bouton ci-dessous pour vous connecter à votre espace JeTravel+ : vous retrouverez votre score, votre CV, vos candidatures et votre assistant personnel.</p>
+    <p style="margin:28px 0">
+      <a href="{{ .ConfirmationURL }}" style="background:#c8553d;color:#ffffff;text-decoration:none;padding:14px 24px;border-radius:12px;font-weight:bold;display:inline-block">Me connecter</a>
+    </p>
+    <p style="font-size:14px;line-height:1.6;color:#85776c">Ce lien est valable une heure et ne peut servir qu'une fois. Si vous n'avez pas demandé à vous connecter, ignorez simplement ce courriel.</p>
+    <hr style="border:0;border-top:1px solid #f1e7dd;margin:28px 0">
+    <p style="font-size:12px;color:#85776c">JeTravel+ — votre projet Canada, étape par étape.</p>
+  </div>
+</body>
+</html>
