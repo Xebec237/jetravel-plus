@@ -236,12 +236,12 @@ const CV = (() => {
     }
     saveApps();
   }
-  function saveApps() { store.set('jt_apps', apps); renderTracker(); }
+  function saveApps() { store.set('jt_apps', apps); renderTracker(); document.dispatchEvent(new CustomEvent('jt:apps')); }
   function renderTracker() {
     const el = $('#tracker');
     if (!apps.length) { el.innerHTML = '<p class="help">Aucune candidature pour le moment. Elles s\'ajoutent ici quand vous envoyez une lettre.</p>'; return; }
     el.innerHTML = `<table class="tracker-table"><thead><tr><th>Entreprise</th><th>Poste</th><th>Date</th><th>Statut</th><th></th></tr></thead><tbody>
-      ${apps.map((a, i) => `<tr><td>${esc(a.company)}</td><td>${esc(a.job)}</td><td>${esc(a.date)}</td>
+      ${apps.map((a, i) => `<tr><td>${esc(a.company)}</td><td>${a.link ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.job)}</a>` : esc(a.job)}</td><td>${esc(a.date)}</td>
         <td><select data-app="${i}">${STATUSES.map((s) => `<option ${s === a.status ? 'selected' : ''}>${s}</option>`).join('')}</select></td>
         <td><button type="button" title="Supprimer" data-del-app="${i}">✕</button></td></tr>`).join('')}
     </tbody></table><p class="help">Relancez poliment par courriel 7 à 10 jours après l'envoi sans réponse.</p>`;
@@ -307,5 +307,27 @@ const CV = (() => {
     renderTracker();
   }
 
-  return { init, prefill };
+  /* ---------------- Fonctions utilisées par l'assistant ---------------- */
+  function prepareLetter(fields) {
+    Object.assign(lt, fields);
+    store.set('jt_letter', lt);
+    $$('[data-lt]').forEach((el) => { if (lt[el.dataset.lt] != null) el.value = lt[el.dataset.lt]; });
+    renderLetter();
+  }
+  function addApp({ company, job, link, status = 'À envoyer' }) {
+    if (link && apps.some((a) => a.link === link)) return false;
+    apps.unshift({ company: company || '—', job: job || '—', date: new Date().toISOString().slice(0, 10), status, link: link || '' });
+    saveApps();
+    return true;
+  }
+  function setAppStatus(index, status) {
+    if (!apps[index]) return;
+    apps[index].status = status;
+    apps[index].date = new Date().toISOString().slice(0, 10);
+    saveApps();
+  }
+  const getApps = () => apps.slice();
+  const getCv = () => cv;
+
+  return { init, prefill, prepareLetter, addApp, setAppStatus, getApps, getCv };
 })();

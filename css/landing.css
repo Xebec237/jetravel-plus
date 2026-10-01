@@ -305,3 +305,25 @@
 .lp-more { display: inline-block; margin-top: 1rem; font-weight: 600; color: var(--accent); text-decoration: none; }
 .lp-more:hover { text-decoration: underline; }
 @media (max-width: 960px) { .lp-news { grid-template-columns: minmax(0, 1fr); } .lp-news-card { padding: 22px; } }
+
+/* Assistant (landing) */
+.lp-bot-title { font-size: clamp(1.7rem, 3vw, 2.3rem) !important; }
+.mock-bot { display: grid; gap: .7rem; }
+.mb-head { display: flex; gap: .8rem; align-items: center; padding-bottom: .7rem; border-bottom: 1px solid var(--border); }
+.mb-ava { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; font-size: 1.4rem; background: var(--accent-weak); animation: float 3.4s ease-in-out infinite; }
+.mb-head small, .mb-item small { display: block; color: var(--muted); font-size: .8rem; }
+.mb-item { display: flex; gap: .7rem; align-items: flex-start; padding: .6rem .7rem; border-radius: 12px; background: var(--surface-2); font-size: .9rem; }
+.lp-feature-visual:hover .mb-item:nth-child(2) { transform: translateX(4px); }
+.mb-item { transition: transform .3s; }
+.lp-ircc { margin-top: 24px; }
+.lp-ircc-list { list-style: none; padding: 0; margin: 0; }
+.lp-ircc-list li { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border); }
+.lp-ircc-list li:last-child { border-bottom: 0; }
+.lp-ircc-list a { color: var(--text); text-decoration: none; font-weight: 500; }
+.lp-ircc-list a:hover { color: var(--accent); }
+.lp-ircc-list small { color: var(--muted); white-space: nowrap; }
+.lp-live { text-align: center; color: var(--muted); font-size: .9rem; margin: 24px 0 0; display: flex; justify-content: center; align-items: center; gap: .5rem; }
+.lp-dot { width: 9px; height: 9px; border-radius: 50%; background: #b9ada3; }
+.lp-live.on .lp-dot { background: var(--ok); box-shadow: 0 0 0 0 rgba(79,125,92,.5); animation: live 2s infinite; }
+@keyframes live { 70% { box-shadow: 0 0 0 9px rgba(79,125,92,0); } 100% { box-shadow: 0 0 0 0 rgba(79,125,92,0); } }
+@media (max-width: 600px) { .lp-ircc-list li { flex-direction: column; gap: .2rem; } }

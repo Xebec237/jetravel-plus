@@ -239,3 +239,53 @@ h1, h2, legend, .brand, .score-num { font-family: var(--font-display); font-weig
 .draw-row:last-child { border-bottom: 0; }
 .draw-row .help { margin: .15rem 0 0; }
 .pill.new { background: var(--info-weak); color: var(--info); }
+
+/* Assistant personnel */
+.bot-hero { display: flex; gap: 1.2rem; align-items: center; }
+.bot-hero h1 { margin: 0 0 .3rem; font-size: 1.7rem; }
+.bot-hero p { margin: 0; color: var(--muted); }
+.bot-avatar {
+  flex: none; width: 68px; height: 68px; border-radius: 22px; display: grid; place-items: center; font-size: 2.1rem;
+  background: linear-gradient(135deg, var(--accent-weak), var(--peach)); animation: botBob 3.2s ease-in-out infinite;
+}
+@keyframes botBob { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-5px) rotate(-4deg); } }
+.bot-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; }
+.bot-chips span { font-size: .8rem; font-weight: 600; padding: .25rem .65rem; border-radius: 99px; background: var(--surface-2); color: var(--muted); }
+.bot-chips span.ok { background: var(--ok-weak); color: var(--ok); }
+.bot-settings summary { cursor: pointer; font-weight: 600; }
+.bot-settings[open] summary { margin-bottom: .4rem; }
+.bot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.bot-list, .bot-jobs, .bot-news { list-style: none; padding: 0; margin: 0; }
+.bot-card { position: relative; display: flex; gap: .8rem; padding: .9rem .9rem .9rem .8rem; border: 1px solid var(--border); border-radius: 14px; margin-bottom: .6rem; background: var(--surface); animation: botIn .45s cubic-bezier(.2,.8,.2,1) both; }
+.bot-card.ok { background: var(--ok-weak); border-color: transparent; }
+.bot-card:nth-child(2) { animation-delay: .06s; } .bot-card:nth-child(3) { animation-delay: .12s; } .bot-card:nth-child(4) { animation-delay: .18s; }
+@keyframes botIn { from { opacity: 0; transform: translateY(8px); } }
+.bot-ico { font-size: 1.35rem; line-height: 1.2; }
+.bot-body { flex: 1; min-width: 0; padding-right: 1.2rem; }
+.bot-body p { margin: .25rem 0 0; font-size: .92rem; color: var(--muted); }
+.bot-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: .6rem; }
+.bot-x { position: absolute; top: .5rem; right: .5rem; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: .9rem; padding: .2rem .4rem; border-radius: 6px; }
+.bot-x:hover { background: var(--surface-2); }
+.bot-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.bot-job { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.bot-job:last-child { border-bottom: 0; }
+.bot-job-main { flex: 1 1 320px; min-width: 0; }
+.bot-job-main b { text-transform: capitalize; }
+.bot-job-main .help { margin: .15rem 0 0; }
+.bot-salary { font-weight: 600; color: var(--ok); font-size: .9rem; margin-top: .2rem; }
+.bot-job-actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+.bot-news li { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--border); }
+.bot-news li:last-child { border-bottom: 0; }
+.bot-news .help { margin: 0; white-space: nowrap; }
+.bot-fab {
+  position: fixed; right: 20px; bottom: 20px; z-index: 30; width: 60px; height: 60px; border-radius: 50%; border: 0; cursor: pointer;
+  font-size: 1.7rem; background: var(--accent); color: #fff; box-shadow: 0 10px 28px rgba(200,85,61,.35);
+  transition: transform .25s cubic-bezier(.2,.8,.2,1); animation: botBob 3.2s ease-in-out infinite;
+}
+.bot-fab:hover { transform: scale(1.08); }
+.bot-badge {
+  position: absolute; top: -4px; right: -4px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 99px;
+  background: #2e7d4f; color: #fff; font-size: .75rem; font-weight: 700; display: grid; place-items: center; border: 2px solid var(--bg);
+}
+@media (max-width: 860px) { .bot-grid { grid-template-columns: minmax(0, 1fr); } .bot-hero { align-items: flex-start; } .bot-avatar { width: 52px; height: 52px; font-size: 1.6rem; } }
+@media (prefers-reduced-motion: reduce) { .bot-avatar, .bot-fab, .bot-card { animation: none; } }

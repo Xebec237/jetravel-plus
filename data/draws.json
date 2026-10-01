@@ -1,0 +1,446 @@
+{
+ "updatedAt": "2026-10-01T21:20:33.366Z",
+ "draws": [
+  {
+   "number": 447,
+   "date": "2026-10-01",
+   "key": "trades",
+   "name": "Métiers spécialisés",
+   "nameEn": "Trades Occupations, 2026-Version 3",
+   "size": 3500,
+   "crs": 476
+  },
+  {
+   "number": 446,
+   "date": "2026-09-29",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 518
+  },
+  {
+   "number": 445,
+   "date": "2026-09-28",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 733,
+   "crs": 725
+  },
+  {
+   "number": 444,
+   "date": "2026-09-16",
+   "key": "managers",
+   "name": "Cadres supérieurs (exp. canadienne)",
+   "nameEn": "Senior managers with Canadian Work Experience, 2026-Version 1",
+   "size": 250,
+   "crs": 389
+  },
+  {
+   "number": 443,
+   "date": "2026-09-15",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 519
+  },
+  {
+   "number": 442,
+   "date": "2026-09-14",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 576,
+   "crs": 734
+  },
+  {
+   "number": 441,
+   "date": "2026-09-04",
+   "key": "health",
+   "name": "Santé et services sociaux",
+   "nameEn": "Healthcare and Social Services Occupations, 2026-Version 3",
+   "size": 3500,
+   "crs": 475
+  },
+  {
+   "number": 440,
+   "date": "2026-09-03",
+   "key": "physicians",
+   "name": "Médecins (exp. canadienne)",
+   "nameEn": "Physicians with Canadian Work Experience, 2026-Version 1",
+   "size": 229,
+   "crs": 198
+  },
+  {
+   "number": 439,
+   "date": "2026-09-01",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 521
+  },
+  {
+   "number": 438,
+   "date": "2026-08-31",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 562,
+   "crs": 697
+  },
+  {
+   "number": 437,
+   "date": "2026-08-19",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 382
+  },
+  {
+   "number": 436,
+   "date": "2026-08-18",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 1000,
+   "crs": 523
+  },
+  {
+   "number": 435,
+   "date": "2026-08-17",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 442,
+   "crs": 760
+  },
+  {
+   "number": 434,
+   "date": "2026-08-07",
+   "key": "transport",
+   "name": "Transport",
+   "nameEn": "Transport Occupations, 2026-Version 2",
+   "size": 300,
+   "crs": 470
+  },
+  {
+   "number": 433,
+   "date": "2026-08-06",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 391
+  },
+  {
+   "number": 432,
+   "date": "2026-08-05",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 3000,
+   "crs": 516
+  },
+  {
+   "number": 431,
+   "date": "2026-08-04",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 507,
+   "crs": 768
+  },
+  {
+   "number": 430,
+   "date": "2026-07-23",
+   "key": "military",
+   "name": "Recrues militaires qualifiées",
+   "nameEn": "Skilled Military Recruits, 2026-Version 1",
+   "size": 4,
+   "crs": 368
+  },
+  {
+   "number": 429,
+   "date": "2026-07-22",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 399
+  },
+  {
+   "number": 428,
+   "date": "2026-07-21",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 516
+  },
+  {
+   "number": 427,
+   "date": "2026-07-20",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 511,
+   "crs": 744
+  },
+  {
+   "number": 426,
+   "date": "2026-07-10",
+   "key": "managers",
+   "name": "Cadres supérieurs (exp. canadienne)",
+   "nameEn": "Senior managers with Canadian Work Experience, 2026-Version 1",
+   "size": 500,
+   "crs": 392
+  },
+  {
+   "number": 425,
+   "date": "2026-07-09",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 420
+  },
+  {
+   "number": 424,
+   "date": "2026-07-07",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 517
+  },
+  {
+   "number": 423,
+   "date": "2026-07-06",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 534,
+   "crs": 708
+  },
+  {
+   "number": 422,
+   "date": "2026-06-25",
+   "key": "health",
+   "name": "Santé et services sociaux",
+   "nameEn": "Healthcare and Social Services Occupations, 2026-Version 3",
+   "size": 4000,
+   "crs": 475
+  },
+  {
+   "number": 421,
+   "date": "2026-06-24",
+   "key": "physicians",
+   "name": "Médecins (exp. canadienne)",
+   "nameEn": "Physicians with Canadian Work Experience, 2026-Version 1",
+   "size": 271,
+   "crs": 223
+  },
+  {
+   "number": 420,
+   "date": "2026-06-23",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 4000,
+   "crs": 516
+  },
+  {
+   "number": 419,
+   "date": "2026-06-22",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 955,
+   "crs": 730
+  },
+  {
+   "number": 418,
+   "date": "2026-05-28",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 4500,
+   "crs": 409
+  },
+  {
+   "number": 417,
+   "date": "2026-05-27",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 3000,
+   "crs": 518
+  },
+  {
+   "number": 416,
+   "date": "2026-05-25",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 334,
+   "crs": 805
+  },
+  {
+   "number": 415,
+   "date": "2026-05-11",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 380,
+   "crs": 798
+  },
+  {
+   "number": 414,
+   "date": "2026-04-29",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 4000,
+   "crs": 400
+  },
+  {
+   "number": 413,
+   "date": "2026-04-28",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 514
+  },
+  {
+   "number": 412,
+   "date": "2026-04-27",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 473,
+   "crs": 795
+  },
+  {
+   "number": 411,
+   "date": "2026-04-15",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 4000,
+   "crs": 419
+  },
+  {
+   "number": 410,
+   "date": "2026-04-14",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2000,
+   "crs": 515
+  },
+  {
+   "number": 409,
+   "date": "2026-04-13",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 324,
+   "crs": 786
+  },
+  {
+   "number": 408,
+   "date": "2026-04-02",
+   "key": "trades",
+   "name": "Métiers spécialisés",
+   "nameEn": "Trades Occupations, 2026-Version 3",
+   "size": 3000,
+   "crs": 477
+  }
+ ],
+ "distribution": {
+  "asOf": "September 27, 2026",
+  "total": 229904,
+  "ranges": [
+   {
+    "min": 601,
+    "max": 1200,
+    "count": 728
+   },
+   {
+    "min": 501,
+    "max": 600,
+    "count": 21070
+   },
+   {
+    "min": 491,
+    "max": 500,
+    "count": 12745
+   },
+   {
+    "min": 481,
+    "max": 490,
+    "count": 12817
+   },
+   {
+    "min": 471,
+    "max": 480,
+    "count": 16465
+   },
+   {
+    "min": 461,
+    "max": 470,
+    "count": 16257
+   },
+   {
+    "min": 451,
+    "max": 460,
+    "count": 14847
+   },
+   {
+    "min": 441,
+    "max": 450,
+    "count": 13677
+   },
+   {
+    "min": 431,
+    "max": 440,
+    "count": 13419
+   },
+   {
+    "min": 421,
+    "max": 430,
+    "count": 12173
+   },
+   {
+    "min": 411,
+    "max": 420,
+    "count": 11888
+   },
+   {
+    "min": 401,
+    "max": 410,
+    "count": 11454
+   },
+   {
+    "min": 351,
+    "max": 400,
+    "count": 47298
+   },
+   {
+    "min": 301,
+    "max": 350,
+    "count": 17359
+   },
+   {
+    "min": 0,
+    "max": 300,
+    "count": 7707
+   }
+  ]
+ }
+}

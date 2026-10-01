@@ -1,0 +1,47 @@
+name: Bot de mise à jour quotidienne
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # chaque jour à 11 h UTC (7 h à Toronto)
+  workflow_dispatch:        # lancement manuel depuis l'onglet Actions
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: bot-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Lire IRCC, Job Bank et vérifier les liens
+        run: node bot/update.mjs
+
+      - name: Publier les nouvelles données
+        run: |
+          if git diff --quiet -- data; then
+            echo "Aucun changement."
+            exit 0
+          fi
+          git config user.name "jetravel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Bot : mise à jour des données du $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Redéployer GitHub Pages
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"

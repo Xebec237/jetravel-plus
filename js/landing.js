@@ -4,7 +4,8 @@
   document.documentElement.classList.add('js');
 
   // Section « Nouveautés IRCC 2026 », générée depuis js/data.js
-  if (typeof CATEGORIES_2026 !== 'undefined') {
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  function renderNews(news) {
     document.getElementById('lp-cats').innerHTML = CATEGORIES_2026.map((c) => `
       <li><span class="cat-name">${c.name}</span>${c.isNew ? '<span class="cat-new">Nouveau</span>' : ''}</li>`).join('');
     const seen = new Set();
@@ -17,12 +18,28 @@
         <i style="--w:${Math.round((d.crs / max) * 100)}%"></i>
         <small>${fmtDate(d.date)} · ${d.size.toLocaleString('fr-CA')} invitations</small>
       </li>`).join('');
+    const items = (news || []).filter((n) => n.relevant).slice(0, 4);
+    if (items.length) {
+      document.getElementById('lp-ircc').hidden = false;
+      document.getElementById('lp-ircc-list').innerHTML = items.map((n) => `
+        <li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><small>${fmtDate(n.date)}</small></li>`).join('');
+    }
+  }
+  if (typeof CATEGORIES_2026 !== 'undefined') {
+    renderNews([]);
+    // Données fraîches publiées par le bot : on remplace les valeurs intégrées.
+    Live.ready.then((data) => {
+      if (!data.live) return;
+      renderNews(data.news);
+      document.querySelectorAll('.lp-news-card.in [data-count]').forEach((el) => { el.textContent = el.dataset.count; });
+      document.getElementById('lp-live').classList.add('on');
+    });
   }
 
   // Éléments qui apparaissent au défilement, avec un léger décalage entre frères.
   const groups = [
     '.lp-hero-text > *', '.lp-stats > div', '.lp-marquee', '.lp-head', '.lp-steps > li',
-    '.lp-feature-text', '.lp-feature-visual', '.lp-news-card', '.lp-franco', '.lp-faq details', '.lp-final', '.lp-footer-in > div',
+    '.lp-feature-text', '.lp-feature-visual', '.lp-news-card', '.lp-live', '.lp-franco', '.lp-faq details', '.lp-final', '.lp-footer-in > div',
   ];
   groups.forEach((sel) => {
     document.querySelectorAll(sel).forEach((el, i) => {

@@ -114,6 +114,8 @@
     renderResult(d, p, r, plan);
     CV.prefill(d, p);
     store.set('jt_computed', true);
+    JT.state = { d, p, r, plan };
+    document.dispatchEvent(new CustomEvent('jt:computed'));
     if (navigate) goTab('result');
   }
 
@@ -266,7 +268,10 @@
   refresh();
   showStep(0);
   CV.init();
+  Assistant.init();
   if (store.get('jt_computed', false)) compute(false);
   const hashTab = location.hash.slice(1);
-  if (['eval', 'result', 'cv', 'jobs'].includes(hashTab)) goTab(hashTab);
+  if (['eval', 'result', 'cv', 'jobs', 'bot'].includes(hashTab)) goTab(hashTab);
+  // Les données du bot (tirages à jour) arrivent après le premier affichage : on recalcule.
+  Live.ready.then(() => { if (store.get('jt_computed', false)) compute(false); });
 })();

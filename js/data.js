@@ -73,7 +73,8 @@ const SKILL_NAMES = ['Compréhension orale', 'Compréhension écrite', 'Expressi
  * communiqué du 18 février 2026 et données officielles des tirages.
  * À mettre à jour quand IRCC publie de nouveaux tirages.
  */
-const IRCC_DATA_DATE = '1er octobre 2026';
+// Valeurs de secours : remplacées au chargement par les données du bot (js/live.js)
+let IRCC_DATA_DATE = '1er octobre 2026';
 LINKS.categories = { label: 'Catégories Entrée express 2026 (IRCC)', url: `${IRCC}/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html` };
 LINKS.news2026 = { label: 'Annonce IRCC des catégories 2026', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html' };
 LINKS.reform = { label: 'Consultation IRCC sur la réforme du CRS', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/consultations/2026-consultation-express-entry.html' };

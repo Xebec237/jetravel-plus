@@ -1,0 +1,21 @@
+{
+ "updatedAt": "2026-10-01T21:20:33.366Z",
+ "sources": {
+  "draws": {
+   "ok": true,
+   "at": "2026-10-01T21:20:33.366Z",
+   "info": "40 tirages"
+  },
+  "news": {
+   "ok": true,
+   "at": "2026-10-01T21:20:33.366Z",
+   "info": "25 annonces"
+  },
+  "jobs": {
+   "ok": true,
+   "at": "2026-10-01T21:20:33.366Z",
+   "info": "920 offres"
+  }
+ },
+ "links": []
+}

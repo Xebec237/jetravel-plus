@@ -22,6 +22,7 @@
     <nav class="lp-links">
       <a href="#comment">Comment ça marche</a>
       <a href="#outils">Les outils</a>
+      <a href="#assistant">Assistant</a>
       <a href="#nouveautes">Nouveautés 2026</a>
       <a href="#faq">Questions</a>
     </nav>
@@ -78,7 +79,7 @@
 
   <!-- BANDE CHIFFRES -->
   <section class="lp-wrap lp-stats">
-    <div><strong data-count="4">4</strong><span>outils réunis en un seul parcours</span></div>
+    <div><strong data-count="5">5</strong><span>outils réunis, dont un assistant personnel</span></div>
     <div><strong data-count="1200">1 200</strong><span>points de la grille CRS calculés en détail</span></div>
     <div><strong data-count="20" data-suffix="+">20+</strong><span>étapes personnalisées avec liens officiels</span></div>
     <div><strong>0 $</strong><span>aucun frais, aucun compte à créer</span></div>
@@ -218,6 +219,34 @@
     </div>
   </section>
 
+  <!-- ASSISTANT -->
+  <section class="lp-section lp-soft" id="assistant">
+    <div class="lp-wrap">
+      <div class="lp-feature">
+        <div class="lp-feature-text">
+          <span class="lp-eyebrow">Nouveau · Votre assistant personnel</span>
+          <h3 class="lp-bot-title">Un assistant qui veille pour vous, chaque jour</h3>
+          <p>Chaque matin, notre bot lit les tirages d'IRCC, les annonces officielles et des centaines d'offres de Job Bank. Votre assistant croise ensuite ces informations avec <b>votre</b> profil pour vous proposer ce qui compte vraiment.</p>
+          <ul class="lp-check">
+            <li>Offres d'emploi adaptées à votre métier et à votre province</li>
+            <li>Alertes quand un tirage vous concerne, avec votre écart au seuil</li>
+            <li>Rappels : envoyer vos candidatures, relancer les recruteurs, prochaine action du plan</li>
+            <li>Votre position estimée parmi les candidats du bassin</li>
+          </ul>
+          <div class="lp-cta" style="margin-top:1.4rem"><a class="btn primary lg" href="app.html#bot">Ouvrir mon assistant →</a></div>
+        </div>
+        <div class="lp-feature-visual">
+          <div class="mock mock-bot">
+            <div class="mb-head"><span class="mb-ava">🤖</span><div><b>Bonjour Awa !</b><small>3 propositions pour vous aujourd'hui</small></div></div>
+            <div class="mb-item"><span>💼</span><div><b>Comptable — Ottawa (ON)</b><small>Nouvelle offre · 60 000 $ à 75 000 $</small></div></div>
+            <div class="mb-item"><span>📢</span><div><b>Tirage francophone : seuil 382</b><small>Vous êtes admissible</small></div></div>
+            <div class="mb-item"><span>🔔</span><div><b>Relancez Desjardins</b><small>Candidature envoyée il y a 8 jours</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- NOUVEAUTÉS IRCC -->
   <section class="lp-section" id="nouveautes">
     <div class="lp-wrap">
@@ -238,6 +267,11 @@
           <a class="lp-more" href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html" target="_blank" rel="noopener">Tous les tirages sur canada.ca ↗</a>
         </div>
       </div>
+      <div class="lp-news-card lp-ircc" id="lp-ircc" hidden>
+        <h3>Dernières annonces d'IRCC</h3>
+        <ul class="lp-ircc-list" id="lp-ircc-list"></ul>
+      </div>
+      <p class="lp-live" id="lp-live"><span class="lp-dot"></span>Mis à jour automatiquement chaque jour par le bot JeTravel+ à partir des sources officielles.</p>
     </div>
   </section>
 
@@ -324,6 +358,7 @@
 </footer>
 
 <script src="js/data.js"></script>
+<script src="js/live.js"></script>
 <script src="js/landing.js"></script>
 </body>
 </html>
