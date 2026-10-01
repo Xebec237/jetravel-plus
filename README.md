@@ -33,3 +33,13 @@ Dans l'onglet « Mon assistant », il croise ces données avec le profil de la p
 offres d'emploi adaptées au métier et à la province, tirages qui la concernent avec l'écart au seuil, position estimée dans le bassin,
 rappels (envoyer une candidature, relancer après 7 jours, prochaine action du plan, objectif de la semaine) et annonces d'IRCC.
 Les profils restent dans le navigateur de chaque personne : aucune donnée personnelle n'est envoyée.
+
+## Comptes utilisateurs (Supabase)
+
+- `supabase/schema.sql` : table `profiles` protégée par des règles RLS (chacun ne voit que son profil).
+- `js/config.js` : URL du projet et clé publique « anon ». Vides = site sans comptes.
+- `js/account.js` : connexion par lien envoyé par courriel, synchronisation automatique du profil entre appareils (la version la plus récente gagne).
+- `supabase/functions/daily-digest` : courriel quotidien de rappels (offres, tirages, candidatures à envoyer ou relancer), envoyé via Resend.
+- `supabase/cron.sql` : planification quotidienne de ce courriel avec pg_cron.
+
+Déploiement de la fonction : `npx supabase functions deploy daily-digest --no-verify-jwt --project-ref <REF-PROJET>`

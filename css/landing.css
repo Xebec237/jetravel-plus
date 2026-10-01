@@ -327,3 +327,6 @@
 .lp-live.on .lp-dot { background: var(--ok); box-shadow: 0 0 0 0 rgba(79,125,92,.5); animation: live 2s infinite; }
 @keyframes live { 70% { box-shadow: 0 0 0 9px rgba(79,125,92,0); } 100% { box-shadow: 0 0 0 0 rgba(79,125,92,0); } }
 @media (max-width: 600px) { .lp-ircc-list li { flex-direction: column; gap: .2rem; } }
+.lp-account { color: var(--text); font-weight: 600; text-decoration: none; font-size: .95rem; }
+.lp-account:hover { color: var(--accent); }
+@media (max-width: 600px) { .lp-account { display: none; } }

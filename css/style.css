@@ -289,3 +289,22 @@ h1, h2, legend, .brand, .score-num { font-family: var(--font-display); font-weig
 }
 @media (max-width: 860px) { .bot-grid { grid-template-columns: minmax(0, 1fr); } .bot-hero { align-items: flex-start; } .bot-avatar { width: 52px; height: 52px; font-size: 1.6rem; } }
 @media (prefers-reduced-motion: reduce) { .bot-avatar, .bot-fab, .bot-card { animation: none; } }
+
+/* Comptes */
+.account-slot { margin-left: auto; }
+.acc-menu { position: relative; }
+.acc-menu summary { list-style: none; display: flex; align-items: center; gap: .5rem; cursor: pointer; padding: .3rem .6rem .3rem .3rem; border-radius: 99px; border: 1px solid var(--border); background: var(--surface); }
+.acc-menu summary::-webkit-details-marker { display: none; }
+.acc-ava { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; font-size: .9rem; }
+.acc-name { font-weight: 600; font-size: .9rem; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acc-pop { position: absolute; right: 0; top: calc(100% + 8px); width: 290px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow); padding: 14px; z-index: 40; display: grid; gap: .5rem; }
+.acc-email { font-weight: 600; word-break: break-all; }
+.acc-sync { font-size: .85rem; color: var(--ok); }
+.acc-modal { position: fixed; inset: 0; z-index: 50; background: rgba(46, 36, 32, .35); backdrop-filter: blur(4px); display: grid; place-items: center; padding: 16px; }
+.acc-dialog { position: relative; width: 100%; max-width: 440px; background: var(--surface); border-radius: 22px; padding: 28px; box-shadow: 0 30px 80px rgba(80,50,30,.25); animation: botIn .35s cubic-bezier(.2,.8,.2,1); }
+.acc-dialog .bot-avatar { margin-bottom: .8rem; }
+.acc-dialog h2 { margin: 0 0 .4rem; }
+.acc-msg { padding: .7rem .9rem; border-radius: 10px; font-size: .92rem; }
+.acc-msg.ok { background: var(--ok-weak); color: var(--ok); }
+.acc-msg.bad { background: var(--accent-weak); color: var(--accent); }
+@media (max-width: 860px) { .acc-name { display: none; } }

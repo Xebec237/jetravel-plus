@@ -269,6 +269,7 @@
   showStep(0);
   CV.init();
   Assistant.init();
+  Account.init();
   if (store.get('jt_computed', false)) compute(false);
   const hashTab = location.hash.slice(1);
   if (['eval', 'result', 'cv', 'jobs', 'bot'].includes(hashTab)) goTab(hashTab);
