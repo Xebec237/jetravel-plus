@@ -66,3 +66,71 @@ const EDU_LABELS = [
   'master', 'doctorat',
 ];
 const SKILL_NAMES = ['Compréhension orale', 'Compréhension écrite', 'Expression écrite', 'Expression orale'];
+
+/*
+ * Catégories Entrée express 2026 et derniers tirages.
+ * Sources : IRCC, page « Category-based selection » (modifiée le 22 juin 2026),
+ * communiqué du 18 février 2026 et données officielles des tirages.
+ * À mettre à jour quand IRCC publie de nouveaux tirages.
+ */
+const IRCC_DATA_DATE = '1er octobre 2026';
+LINKS.categories = { label: 'Catégories Entrée express 2026 (IRCC)', url: `${IRCC}/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html` };
+LINKS.news2026 = { label: 'Annonce IRCC des catégories 2026', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html' };
+LINKS.reform = { label: 'Consultation IRCC sur la réforme du CRS', url: 'https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/consultations/2026-consultation-express-entry.html' };
+
+// field : valeur du champ « Domaine de métier » du questionnaire
+// cdnOnly : l'expérience de 12 mois doit avoir été acquise au Canada
+const CATEGORIES_2026 = [
+  { key: 'french', name: 'Connaissance du français', isNew: false, rule: 'NCLC 7 ou plus dans les 4 compétences en français' },
+  { key: 'health', field: 'health', name: 'Santé et services sociaux', isNew: false, rule: '12 mois d\'expérience à temps plein (au Canada ou à l\'étranger) dans les 3 dernières années' },
+  { key: 'stem', field: 'stem', name: 'Sciences, technologies, génie et mathématiques (STIM)', isNew: false, rule: '12 mois d\'expérience à temps plein (Canada ou étranger) dans les 3 dernières années' },
+  { key: 'trades', field: 'trades', name: 'Métiers spécialisés', isNew: false, rule: '12 mois d\'expérience à temps plein (Canada ou étranger) dans les 3 dernières années' },
+  { key: 'education', field: 'education', name: 'Éducation', isNew: false, rule: '12 mois d\'expérience à temps plein (Canada ou étranger) dans les 3 dernières années' },
+  { key: 'transport', field: 'transport', name: 'Transport', isNew: true, rule: '12 mois d\'expérience à temps plein (Canada ou étranger) dans les 3 dernières années — pilotes, mécaniciens d\'aéronefs, inspecteurs…' },
+  { key: 'physicians', field: 'physician', cdnOnly: true, name: 'Médecins avec expérience canadienne', isNew: true, rule: '12 mois d\'expérience à temps plein AU CANADA dans les 3 dernières années' },
+  { key: 'managers', field: 'manager', cdnOnly: true, name: 'Cadres supérieurs avec expérience canadienne', isNew: true, rule: '12 mois d\'expérience à temps plein AU CANADA dans les 3 dernières années' },
+  { key: 'researchers', field: 'researcher', cdnOnly: true, name: 'Chercheurs avec expérience canadienne', isNew: true, rule: '12 mois d\'expérience à temps plein AU CANADA dans les 3 dernières années' },
+  { key: 'military', field: 'military', name: 'Recrues militaires qualifiées', isNew: true, rule: '10 ans de service militaire continu et recrutement par les Forces armées canadiennes' },
+];
+
+// Derniers tirages publiés par IRCC (du plus récent au plus ancien)
+const DRAWS = [
+  { date: '2026-10-01', key: 'trades', name: 'Métiers spécialisés', size: 3500, crs: 476 },
+  { date: '2026-09-29', key: 'cec', name: 'Expérience canadienne', size: 2000, crs: 518 },
+  { date: '2026-09-28', key: 'pnp', name: 'Candidats des provinces', size: 733, crs: 725 },
+  { date: '2026-09-16', key: 'managers', name: 'Cadres supérieurs (exp. canadienne)', size: 250, crs: 389 },
+  { date: '2026-09-15', key: 'cec', name: 'Expérience canadienne', size: 2000, crs: 519 },
+  { date: '2026-09-14', key: 'pnp', name: 'Candidats des provinces', size: 576, crs: 734 },
+  { date: '2026-09-04', key: 'health', name: 'Santé et services sociaux', size: 3500, crs: 475 },
+  { date: '2026-09-03', key: 'physicians', name: 'Médecins (exp. canadienne)', size: 229, crs: 198 },
+  { date: '2026-09-01', key: 'cec', name: 'Expérience canadienne', size: 2000, crs: 521 },
+  { date: '2026-08-31', key: 'pnp', name: 'Candidats des provinces', size: 562, crs: 697 },
+  { date: '2026-08-19', key: 'french', name: 'Connaissance du français', size: 5000, crs: 382 },
+  { date: '2026-08-18', key: 'cec', name: 'Expérience canadienne', size: 1000, crs: 523 },
+  { date: '2026-08-17', key: 'pnp', name: 'Candidats des provinces', size: 442, crs: 760 },
+  { date: '2026-08-07', key: 'transport', name: 'Transport', size: 300, crs: 470 },
+  { date: '2026-08-06', key: 'french', name: 'Connaissance du français', size: 5000, crs: 391 },
+  { date: '2026-08-05', key: 'cec', name: 'Expérience canadienne', size: 3000, crs: 516 },
+  { date: '2026-08-04', key: 'pnp', name: 'Candidats des provinces', size: 507, crs: 768 },
+  { date: '2026-07-23', key: 'military', name: 'Recrues militaires qualifiées', size: 4, crs: 368 },
+  { date: '2026-07-22', key: 'french', name: 'Connaissance du français', size: 5000, crs: 399 },
+  { date: '2026-07-21', key: 'cec', name: 'Expérience canadienne', size: 2000, crs: 516 },
+];
+const lastDraw = (key) => DRAWS.find((d) => d.key === key) || null;
+const fmtDate = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('fr-CA', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Catégories et programmes visés par un profil.
+function matchDraws(field, p) {
+  const out = [];
+  const expOk = (c) => (c.cdnOnly ? p.cdnWork >= 1 : p.cdnWork >= 1 || p.forWork >= 1);
+  CATEGORIES_2026.forEach((c) => {
+    let ok;
+    if (c.key === 'french') ok = !!p.fr && Math.min(...p.fr) >= 7;
+    else if (c.key === 'military') ok = field === 'military';
+    else ok = c.field === field && expOk(c);
+    const close = !ok && (c.key === 'french' ? !!p.fr : c.field === field);
+    if (ok || close) out.push({ ...c, ok, draw: lastDraw(c.key) });
+  });
+  if (p.cdnWork >= 1) out.push({ key: 'cec', name: 'Catégorie de l\'expérience canadienne (programme)', rule: '1 an d\'expérience qualifiée au Canada', ok: true, draw: lastDraw('cec') });
+  return out;
+}

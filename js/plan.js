@@ -95,7 +95,7 @@ const Plan = (() => {
       const g = sim((q) => { q.fr = lift(q.fr, 7); });
       boost.push({
         id: 'french', gain: g, title: 'Ajouter le français : viser NCLC 7 au TEF Canada ou au TCF Canada',
-        why: `Atteindre NCLC 7 dans les 4 compétences en français vous rapporterait <b>+${g} points</b> (bonus francophone de 25 à 50 points + points de deuxième langue). Il donne surtout accès aux <b>tirages réservés aux francophones</b>, dont les seuils sont souvent bien plus bas que ceux des tirages généraux.`,
+        why: `Atteindre NCLC 7 dans les 4 compétences en français vous rapporterait <b>+${g} points</b> (bonus francophone de 25 à 50 points + points de deuxième langue). Il donne surtout accès aux <b>tirages réservés aux francophones</b> : 5 000 invitations par tirage en 2026, avec un dernier seuil de <b>${lastDraw('french').crs} points</b> (au ${IRCC_DATA_DATE}).`,
         steps: [
           'NCLC 7 correspond environ au niveau B2 : prévoyez quelques mois d\'apprentissage régulier.',
           'Utilisez des ressources gratuites (TV5Monde, RFI) et, si possible, un cours à l\'Alliance française.',
@@ -342,13 +342,15 @@ const Plan = (() => {
       links: [L.ee, L.rounds],
     });
     process.push({
-      id: 'draws', title: 'Surveiller les tirages et les catégories',
-      why: 'IRCC organise des tirages généraux et des tirages par catégorie (francophones, santé, métiers, etc.) avec des seuils différents. Les seuils des tirages généraux ont souvent dépassé 500 points ; certains tirages par catégorie sont plus bas.',
+      id: 'draws', title: 'Viser les bons tirages : catégories 2026',
+      why: `En 2026, IRCC invite surtout par catégorie et par programme. Derniers seuils au ${IRCC_DATA_DATE} : français ${lastDraw('french').crs}, santé ${lastDraw('health').crs}, métiers ${lastDraw('trades').crs}, transport ${lastDraw('transport').crs}, expérience canadienne ${lastDraw('cec').crs}. Nouveautés 2026 : médecins, cadres supérieurs et chercheurs avec expérience canadienne, transport et recrues militaires.`,
       steps: [
-        'Consultez régulièrement la page des tirages : date, catégorie, score minimum.',
-        'Vérifiez si votre profil correspond à une catégorie ciblée (langue française, profession…).',
+        'Regardez la carte « Vos chances dans les tirages 2026 » plus haut : elle compare votre score aux derniers seuils.',
+        'Vérifiez que votre code CNP figure dans la liste officielle de la catégorie visée.',
+        'Les catégories demandent désormais 12 mois d\'expérience à temps plein dans les 3 dernières années (au Canada uniquement pour médecins, cadres supérieurs et chercheurs).',
+        'Consultez régulièrement la page des tirages : un nouveau tirage a lieu presque chaque semaine.',
       ],
-      links: [L.rounds],
+      links: [L.categories, L.rounds, L.news2026],
     });
     process.push({
       id: 'docs', title: 'Préparer vos documents à l\'avance',

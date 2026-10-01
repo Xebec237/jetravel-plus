@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -216,6 +216,21 @@
         <label class="field"><span>Votre métier (pour la recherche d'emploi et le CV)</span>
           <input type="text" name="jobTitle" placeholder="ex. Comptable, Infirmière, Développeur web">
         </label>
+        <label class="field"><span>Votre domaine de métier (pour les tirages par catégorie 2026)</span>
+          <select name="field">
+            <option value="">Autre / aucun de ceux-ci</option>
+            <option value="health">Santé et services sociaux (infirmier, pharmacien, aide-soignant…)</option>
+            <option value="stem">Sciences, technologies, génie, mathématiques (STIM)</option>
+            <option value="trades">Métiers spécialisés (électricien, plombier, charpentier…)</option>
+            <option value="education">Éducation (enseignant, éducateur…)</option>
+            <option value="transport">Transport (pilote, mécanicien d'aéronefs, inspecteur…)</option>
+            <option value="physician">Médecin</option>
+            <option value="manager">Cadre supérieur</option>
+            <option value="researcher">Chercheur</option>
+            <option value="military">Militaire (10 ans de service ou plus)</option>
+          </select>
+        </label>
+        <p class="help">Vérifiez votre code CNP exact sur la liste officielle : chaque catégorie vise des professions précises.</p>
         <label class="field"><span>Province visée</span>
           <select name="province">
             <option value="">Pas encore décidé</option>

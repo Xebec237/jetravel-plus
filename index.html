@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +22,7 @@
     <nav class="lp-links">
       <a href="#comment">Comment ça marche</a>
       <a href="#outils">Les outils</a>
+      <a href="#nouveautes">Nouveautés 2026</a>
       <a href="#faq">Questions</a>
     </nav>
     <a class="btn primary" href="app.html#eval">Calculer mon score</a>
@@ -32,6 +33,7 @@
 
   <!-- HERO -->
   <section class="lp-hero">
+    <div class="lp-blob b1" aria-hidden="true"></div><div class="lp-blob b2" aria-hidden="true"></div><div class="lp-blob b3" aria-hidden="true"></div>
     <div class="lp-wrap lp-hero-in">
       <div class="lp-hero-text">
         <span class="lp-eyebrow">🍁 Immigration au Canada · Entrée express</span>
@@ -53,7 +55,7 @@
         <div class="mock mock-score">
           <div class="mock-label">Exemple de résultat</div>
           <div class="mock-score-row">
-            <div class="mock-num">468</div>
+            <div class="mock-num" data-count="468">468</div>
             <span class="pill ok">Bon profil</span>
           </div>
           <div class="mock-bars">
@@ -76,10 +78,16 @@
 
   <!-- BANDE CHIFFRES -->
   <section class="lp-wrap lp-stats">
-    <div><strong>4</strong><span>outils réunis en un seul parcours</span></div>
-    <div><strong>1 200</strong><span>points de la grille CRS calculés en détail</span></div>
-    <div><strong>20+</strong><span>étapes personnalisées avec liens officiels</span></div>
+    <div><strong data-count="4">4</strong><span>outils réunis en un seul parcours</span></div>
+    <div><strong data-count="1200">1 200</strong><span>points de la grille CRS calculés en détail</span></div>
+    <div><strong data-count="20" data-suffix="+">20+</strong><span>étapes personnalisées avec liens officiels</span></div>
     <div><strong>0 $</strong><span>aucun frais, aucun compte à créer</span></div>
+  </section>
+
+  <!-- BANDEAU DÉFILANT -->
+  <section class="lp-marquee" aria-label="Sites vers lesquels le plan vous oriente">
+    <p>Votre plan vous mène directement vers</p>
+    <div class="lp-marquee-track"><div class="lp-marquee-row"><span>WES Canada</span><span>IELTS</span><span>CELPIP</span><span>TEF Canada</span><span>TCF Canada</span><span>Guichet-Emplois</span><span>Job Bank</span><span>Indeed</span><span>LinkedIn</span><span>Programmes provinciaux</span><span>IRCC — Entrée express</span></div><div class="lp-marquee-row" aria-hidden="true"><span>WES Canada</span><span>IELTS</span><span>CELPIP</span><span>TEF Canada</span><span>TCF Canada</span><span>Guichet-Emplois</span><span>Job Bank</span><span>Indeed</span><span>LinkedIn</span><span>Programmes provinciaux</span><span>IRCC — Entrée express</span></div></div>
   </section>
 
   <!-- COMMENT ÇA MARCHE -->
@@ -210,6 +218,29 @@
     </div>
   </section>
 
+  <!-- NOUVEAUTÉS IRCC -->
+  <section class="lp-section" id="nouveautes">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <span class="lp-eyebrow">Nouveautés IRCC 2026</span>
+        <h2>Les nouvelles catégories et les derniers tirages</h2>
+        <p class="lp-sub">IRCC invite désormais surtout par catégorie de métier et par programme. L'outil compare automatiquement votre score aux derniers seuils.</p>
+      </div>
+      <div class="lp-news">
+        <div class="lp-news-card">
+          <h3>Catégories 2026</h3>
+          <ul class="lp-cats" id="lp-cats"></ul>
+          <p class="lp-note">Depuis 2026 : 12 mois d'expérience à temps plein exigés dans les 3 dernières années. La catégorie Agriculture n'a pas été reconduite.</p>
+        </div>
+        <div class="lp-news-card">
+          <h3>Derniers tirages <small id="lp-draws-date"></small></h3>
+          <ul class="lp-draws" id="lp-draws"></ul>
+          <a class="lp-more" href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html" target="_blank" rel="noopener">Tous les tirages sur canada.ca ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FRANCOPHONES -->
   <section class="lp-section">
     <div class="lp-wrap">
@@ -217,7 +248,7 @@
         <div>
           <span class="lp-eyebrow">Vous parlez français ?</span>
           <h2>Votre langue est un vrai atout</h2>
-          <p>Un niveau NCLC 7 en français peut rapporter jusqu'à <b>50 points bonus</b> et donne accès aux tirages réservés aux francophones, dont les seuils sont souvent plus bas. Notre plan vous indique précisément ce que le français — et l'anglais — vous rapporteraient.</p>
+          <p>Un niveau NCLC 7 en français peut rapporter jusqu'à <b>50 points bonus</b> et donne accès aux tirages réservés aux francophones : 5 000 invitations par tirage en 2026, avec un dernier seuil de 382 points. Notre plan vous indique précisément ce que le français — et l'anglais — vous rapporteraient.</p>
         </div>
         <a class="btn primary lg" href="app.html#eval">Voir ce que je peux gagner →</a>
       </div>
@@ -242,7 +273,7 @@
         </details>
         <details>
           <summary>Quel score faut-il pour être invité ?</summary>
-          <p>Le seuil change à chaque tirage. Les tirages généraux ont souvent demandé plus de 500 points, tandis que certains tirages par catégorie (francophones, santé, métiers…) sont plus bas. Le plan vous donne le lien vers les résultats officiels.</p>
+          <p>Le seuil change à chaque tirage et dépend de la catégorie. Fin septembre 2026, il était d’environ 518 points pour l’expérience canadienne, 475 pour la santé et les métiers, et 382 pour les francophones. L’outil compare votre score à ces seuils.</p>
         </details>
         <details>
           <summary>Mes données sont-elles envoyées quelque part ?</summary>
@@ -292,5 +323,7 @@
   <p class="lp-disclaimer lp-wrap">JeTravel+ n'est pas affilié au gouvernement du Canada. Les résultats sont des estimations ; utilisez toujours les sites officiels (canada.ca) pour vos démarches.</p>
 </footer>
 
+<script src="js/data.js"></script>
+<script src="js/landing.js"></script>
 </body>
 </html>

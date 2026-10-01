@@ -1,21 +1,21 @@
 :root {
-  --bg: #fbf6f0;
-  --surface: #fffdfa;
-  --surface-2: #f5ece2;
-  --text: #2e2420;
-  --muted: #7a6a5f;
-  --border: #ecdfd2;
+  --bg: #fffcf9;
+  --surface: #ffffff;
+  --surface-2: #faf3ec;
+  --text: #33291f;
+  --muted: #85776c;
+  --border: #f1e7dd;
   --accent: #c8553d;
   --accent-strong: #ad4430;
-  --accent-weak: #fbe8df;
+  --accent-weak: #fdf0ea;
   --ok: #4f7d5c;
-  --ok-weak: #e8f1e6;
+  --ok-weak: #eef6ec;
   --warn: #93641c;
-  --warn-weak: #fbf0d8;
+  --warn-weak: #fdf6e6;
   --info: #3f6f86;
-  --info-weak: #e4eff2;
-  --peach: #f6d9c4;
-  --shadow: 0 1px 2px rgba(80,50,30,.05), 0 10px 30px rgba(120,70,40,.07);
+  --info-weak: #edf5f7;
+  --peach: #fbe6d7;
+  --shadow: 0 1px 2px rgba(80,50,30,.04), 0 10px 30px rgba(120,70,40,.06);
   --radius: 16px;
   --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Fraunces", Georgia, serif;
@@ -234,3 +234,8 @@ h1, h2, legend, .brand, .score-num { font-family: var(--font-display); font-weig
 .btn, .tabs button, .choice, input, select, textarea { border-radius: 12px; }
 .topbar { background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); }
 #progress-bar { background: linear-gradient(90deg, var(--accent), #e59a6b); }
+.draw-list { list-style: none; padding: 0; margin: .4rem 0; }
+.draw-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid var(--border); }
+.draw-row:last-child { border-bottom: 0; }
+.draw-row .help { margin: .15rem 0 0; }
+.pill.new { background: var(--info-weak); color: var(--info); }

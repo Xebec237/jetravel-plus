@@ -181,6 +181,7 @@
             <li>Les tirages Entrée express invitent les candidats au-dessus d'un seuil qui change à chaque tirage : consultez les <a href="${LINKS.rounds.url}" target="_blank" rel="noopener">derniers résultats</a>.</li>
             <li>Il existe des tirages par catégorie (francophones, santé, métiers, etc.) avec des seuils souvent plus bas que les tirages généraux.</li>
             <li>${d.jobOffer === 'yes' ? 'Votre offre d\'emploi ne donne plus de points CRS depuis le 25 mars 2025, mais elle aide beaucoup pour une nomination provinciale et un permis de travail.' : 'Une offre d\'emploi ne donne plus de points CRS depuis le 25 mars 2025, mais elle reste très utile (nomination provinciale, permis de travail).'}</li>
+            <li><b>Réforme à surveiller :</b> IRCC a consulté en 2026 sur une refonte du CRS (le bonus français, les points frère ou sœur, études au Canada et conjoint pourraient changer). Au ${IRCC_DATA_DATE}, rien n'est encore en vigueur : <a href="${LINKS.reform.url}" target="_blank" rel="noopener">voir la consultation</a>.</li>
             <li>Ce calcul est une estimation. Vérifiez avec le <a href="${LINKS.crsTool.url}" target="_blank" rel="noopener">calculateur officiel d'IRCC</a>.</li>
           </ul>
           <div class="link-buttons">
@@ -190,9 +191,42 @@
         </div>
       </div>
 
+      ${drawsCard(d, p, r)}
+
       ${Plan.render(plan)}`;
 
     $('#print-plan').onclick = () => window.print();
+  }
+
+  /* ---------- Tirages et catégories 2026 ---------- */
+  function drawsCard(d, p, r) {
+    const rows = matchDraws(d.field, p);
+    const item = (m) => {
+      const dr = m.draw;
+      let status;
+      if (!m.ok) status = `<span class="pill warn">Condition manquante</span>`;
+      else if (!dr) status = '<span class="pill warn">Pas encore de tirage en 2026</span>';
+      else if (r.total >= dr.crs) status = `<span class="pill ok">✓ Au-dessus du dernier seuil (${dr.crs})</span>`;
+      else status = `<span class="pill bad">Il vous manque ${dr.crs - r.total} points (seuil ${dr.crs})</span>`;
+      const info = !m.ok
+        ? esc(m.rule)
+        : dr ? `Dernier tirage : ${fmtDate(dr.date)} · ${dr.size.toLocaleString('fr-CA')} invitations · seuil ${dr.crs}` : esc(m.rule);
+      return `<li class="draw-row">
+        <div><b>${esc(m.name)}</b>${m.isNew ? ' <span class="pill new">Nouveau 2026</span>' : ''}<div class="help">${info}</div></div>
+        <div>${status}</div></li>`;
+    };
+    const french = lastDraw('french');
+    return `<div class="card">
+        <h2>Vos chances dans les tirages 2026</h2>
+        <p class="help">IRCC invite désormais surtout par catégorie et par programme, plutôt que par tirages généraux. Données officielles au ${IRCC_DATA_DATE}.</p>
+        ${rows.length
+          ? `<ul class="draw-list">${rows.map(item).join('')}</ul>`
+          : `<div class="alert info">Avec votre profil actuel, aucune catégorie 2026 ne vous vise directement. Les pistes les plus accessibles : atteindre <b>NCLC 7 en français</b> (dernier seuil : ${french.crs} points) ou obtenir <b>un an d'expérience au Canada</b>.</div>`}
+        <div class="link-buttons">
+          <a class="btn ghost small" href="${LINKS.categories.url}" target="_blank" rel="noopener">Catégories officielles ↗</a>
+          <a class="btn ghost small" href="${LINKS.rounds.url}" target="_blank" rel="noopener">Tous les tirages ↗</a>
+        </div>
+      </div>`;
   }
 
   /* ---------- Événements ---------- */
