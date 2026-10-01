@@ -106,7 +106,9 @@ const Account = (() => {
         <div class="acc-pop">
           <div class="acc-email">${esc(user.email)}</div>
           <div class="acc-sync" id="acc-status">${STATUS[status] || ''}</div>
-          <label class="done-toggle"><input type="checkbox" id="acc-notify" ${profile.notify_email ? 'checked' : ''}> Recevoir mes rappels par courriel (1 par jour au maximum)</label>
+          ${typeof EMAIL_DIGEST_ENABLED !== 'undefined' && EMAIL_DIGEST_ENABLED
+            ? `<label class="done-toggle"><input type="checkbox" id="acc-notify" ${profile.notify_email ? 'checked' : ''}> Recevoir mes rappels par courriel (1 par jour au maximum)</label>`
+            : '<p class="help">Vos rappels s\'affichent dans « Mon assistant ». Les rappels par courriel arrivent bientôt.</p>'}
           <button type="button" class="btn small ghost" id="acc-logout">Se déconnecter</button>
         </div>
       </details>`;
