@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-01T21:20:33.366Z",
+ "updatedAt": "2026-10-01T21:32:23.228Z",
  "queries": [
   "registered nurse",
   "licensed practical nurse",
@@ -1560,6 +1560,30 @@
    "date": "2026-10-01",
    "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50401758",
    "q": "welder",
+   "field": "trades"
+  },
+  {
+   "id": "3684904",
+   "title": "carpenter",
+   "employer": "PB 12 Construction Ltd.",
+   "location": "Surrey",
+   "province": "BC",
+   "salary": "$38.00 to $40.00 hourly (to be negotiated)",
+   "date": "2026-10-01",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50406009",
+   "q": "carpenter",
+   "field": "trades"
+  },
+  {
+   "id": "3685686",
+   "title": "carpenter, renovation",
+   "employer": "Donatis Brothers Inc.",
+   "location": "Thunder Bay",
+   "province": "ON",
+   "salary": "$25.00 to $40.00 hourly (to be negotiated)",
+   "date": "2026-10-01",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50406004",
+   "q": "carpenter",
    "field": "trades"
   },
   {
@@ -4083,18 +4107,6 @@
    "field": "transport"
   },
   {
-   "id": "3685825",
-   "title": "truck driver",
-   "employer": "Raider Logistics",
-   "location": "Acton",
-   "province": "ON",
-   "salary": "$36.50 to $38.50 hourly (to be negotiated)",
-   "date": "2026-10-01",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50402105",
-   "q": "truck driver",
-   "field": "transport"
-  },
-  {
    "id": "3684761",
    "title": "driver, heavy truck",
    "employer": "Groupe TYT INC",
@@ -4103,6 +4115,18 @@
    "salary": "$25.85 hourly",
    "date": "2026-10-01",
    "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50402107",
+   "q": "truck driver",
+   "field": "transport"
+  },
+  {
+   "id": "3685825",
+   "title": "truck driver",
+   "employer": "Raider Logistics",
+   "location": "Acton",
+   "province": "ON",
+   "salary": "$36.50 to $38.50 hourly (to be negotiated)",
+   "date": "2026-10-01",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50402105",
    "q": "truck driver",
    "field": "transport"
   },
@@ -6567,18 +6591,6 @@
    "field": "manager"
   },
   {
-   "id": "3686194",
-   "title": "restaurant manager",
-   "employer": "Booster Juice",
-   "location": "Bonnyville",
-   "province": "AB",
-   "salary": "$36.00 hourly",
-   "date": "2026-10-01",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50404255",
-   "q": "manager",
-   "field": "manager"
-  },
-  {
    "id": "3686189",
    "title": "restaurant manager",
    "employer": "Harvey's",
@@ -6587,6 +6599,18 @@
    "salary": "$19.00 hourly",
    "date": "2026-10-01",
    "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50404253",
+   "q": "manager",
+   "field": "manager"
+  },
+  {
+   "id": "3686194",
+   "title": "restaurant manager",
+   "employer": "Booster Juice",
+   "location": "Bonnyville",
+   "province": "AB",
+   "salary": "$36.00 hourly",
+   "date": "2026-10-01",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50404255",
    "q": "manager",
    "field": "manager"
   },
@@ -7419,6 +7443,18 @@
    "field": "stem"
   },
   {
+   "id": "550443",
+   "title": "data analyst - informatics and systems",
+   "employer": "FOP EXPERTS CONSEILS INC.",
+   "location": "Brossard",
+   "province": "QC",
+   "salary": "$60,000.00 annually",
+   "date": "2026-09-30",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396257",
+   "q": "data analyst",
+   "field": "stem"
+  },
+  {
    "id": "550446",
    "title": "data analyst - informatics and systems",
    "employer": "FOP EXPERTS CONSEILS INC.",
@@ -7463,18 +7499,6 @@
    "salary": "$60,000.00 annually",
    "date": "2026-09-30",
    "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396207",
-   "q": "data analyst",
-   "field": "stem"
-  },
-  {
-   "id": "550443",
-   "title": "data analyst - informatics and systems",
-   "employer": "FOP EXPERTS CONSEILS INC.",
-   "location": "Brossard",
-   "province": "QC",
-   "salary": "$60,000.00 annually",
-   "date": "2026-09-30",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396257",
    "q": "data analyst",
    "field": "stem"
   },
@@ -9159,6 +9183,18 @@
    "field": "transport"
   },
   {
+   "id": "3865946",
+   "title": "driver, transport",
+   "employer": "Lyft",
+   "location": "Québec",
+   "province": "QC",
+   "salary": "$18.00 to $35.00 hourly",
+   "date": "2026-09-30",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396113",
+   "q": "truck driver",
+   "field": "transport"
+  },
+  {
    "id": "3866675",
    "title": "driver, transport",
    "employer": "Lyft",
@@ -9179,18 +9215,6 @@
    "salary": "$18.00 to $35.00 hourly",
    "date": "2026-09-30",
    "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396115",
-   "q": "truck driver",
-   "field": "transport"
-  },
-  {
-   "id": "3865946",
-   "title": "driver, transport",
-   "employer": "Lyft",
-   "location": "Québec",
-   "province": "QC",
-   "salary": "$18.00 to $35.00 hourly",
-   "date": "2026-09-30",
-   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50396113",
    "q": "truck driver",
    "field": "transport"
   },
