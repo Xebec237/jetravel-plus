@@ -9,6 +9,6 @@ Outil web pour préparer son immigration au Canada via Entrée express :
 
 ## Utilisation
 
-Ouvrez `index.html` dans un navigateur. Aucune installation ni serveur requis. Les données restent dans le navigateur de l'utilisateur.
+Ouvrez `index.html` (page d'accueil) dans un navigateur ; l'outil se trouve dans `app.html`. Aucune installation ni serveur requis. Les données restent dans le navigateur de l'utilisateur.
 
 > Estimation indicative : seul l'outil officiel d'IRCC et le profil Entrée express font foi.

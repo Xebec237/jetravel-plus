@@ -233,4 +233,6 @@
   showStep(0);
   CV.init();
   if (store.get('jt_computed', false)) compute(false);
+  const hashTab = location.hash.slice(1);
+  if (['eval', 'result', 'cv', 'jobs'].includes(hashTab)) goTab(hashTab);
 })();

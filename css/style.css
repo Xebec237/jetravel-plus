@@ -1,41 +1,45 @@
 :root {
-  --bg: #f5f6f8;
-  --surface: #ffffff;
-  --surface-2: #f0f2f5;
-  --text: #1b1f24;
-  --muted: #5b6470;
-  --border: #dde1e6;
-  --accent: #c8102e;
-  --accent-weak: #fdecee;
-  --ok: #1a7f4b;
-  --ok-weak: #e6f4ec;
-  --warn: #8a5a00;
-  --warn-weak: #fff4d6;
-  --info: #1f5fbf;
-  --info-weak: #e8f0fc;
-  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 6px 18px rgba(0,0,0,.05);
-  --radius: 12px;
+  --bg: #fbf6f0;
+  --surface: #fffdfa;
+  --surface-2: #f5ece2;
+  --text: #2e2420;
+  --muted: #7a6a5f;
+  --border: #ecdfd2;
+  --accent: #c8553d;
+  --accent-strong: #ad4430;
+  --accent-weak: #fbe8df;
+  --ok: #4f7d5c;
+  --ok-weak: #e8f1e6;
+  --warn: #93641c;
+  --warn-weak: #fbf0d8;
+  --info: #3f6f86;
+  --info-weak: #e4eff2;
+  --peach: #f6d9c4;
+  --shadow: 0 1px 2px rgba(80,50,30,.05), 0 10px 30px rgba(120,70,40,.07);
+  --radius: 16px;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #101317; --surface: #191e24; --surface-2: #222830; --text: #e7eaee; --muted: #9aa4af;
-    --border: #2d343c; --accent: #ff5d70; --accent-weak: #3a1a20; --ok: #4cc38a; --ok-weak: #15301f;
-    --warn: #e3b341; --warn-weak: #33290f; --info: #79a8ff; --info-weak: #18243a;
-    --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
+    --bg: #1d1714; --surface: #271f1b; --surface-2: #322823; --text: #f3e9e1; --muted: #b5a497;
+    --border: #3d322b; --accent: #e8806a; --accent-strong: #f0937e; --accent-weak: #43261f;
+    --ok: #8cc29a; --ok-weak: #1f3024; --warn: #e6b866; --warn-weak: #3a2d15; --info: #8cbcd1; --info-weak: #1c2d35;
+    --peach: #4a3226; --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.25); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #101317; --surface: #191e24; --surface-2: #222830; --text: #e7eaee; --muted: #9aa4af;
-  --border: #2d343c; --accent: #ff5d70; --accent-weak: #3a1a20; --ok: #4cc38a; --ok-weak: #15301f;
-  --warn: #e3b341; --warn-weak: #33290f; --info: #79a8ff; --info-weak: #18243a;
-  --shadow: 0 1px 2px rgba(0,0,0,.4); color-scheme: dark;
+  --bg: #1d1714; --surface: #271f1b; --surface-2: #322823; --text: #f3e9e1; --muted: #b5a497;
+  --border: #3d322b; --accent: #e8806a; --accent-strong: #f0937e; --accent-weak: #43261f;
+  --ok: #8cc29a; --ok-weak: #1f3024; --warn: #e6b866; --warn-weak: #3a2d15; --info: #8cbcd1; --info-weak: #1c2d35;
+  --peach: #4a3226; --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.25); color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--text);
-  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.6 var(--font-body);
 }
 a { color: var(--info); }
 h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 .4rem; }
@@ -182,9 +186,9 @@ input[type="checkbox"], input[type="radio"] { width: auto; padding: 0; }
   position: sticky; top: 70px; max-height: calc(100vh - 90px); overflow: auto;
 }
 .cv-paper h1 { font-size: 20pt; margin: 0; color: #111; }
-.cv-paper .cv-title { font-size: 11.5pt; color: #8a0f20; font-weight: 600; margin: 2px 0 4px; }
+.cv-paper .cv-title { font-size: 11.5pt; color: #a8432f; font-weight: 600; margin: 2px 0 4px; }
 .cv-paper .cv-contact { color: #444; font-size: 9.5pt; }
-.cv-paper h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .08em; color: #8a0f20; border-bottom: 1.5px solid #8a0f20; padding-bottom: 2px; margin: 14px 0 6px; }
+.cv-paper h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .08em; color: #a8432f; border-bottom: 1.5px solid #a8432f; padding-bottom: 2px; margin: 14px 0 6px; }
 .cv-paper .cv-job { display: flex; justify-content: space-between; gap: 8px; font-weight: 700; margin-top: 8px; }
 .cv-paper .cv-job span:last-child { font-weight: 400; color: #555; white-space: nowrap; }
 .cv-paper .cv-org { color: #444; font-style: italic; }
@@ -222,3 +226,11 @@ footer { text-align: center; color: var(--muted); font-size: .82rem; padding: 1r
   #tab-cv .cv-paper { border: 0; box-shadow: none; padding: 0; position: static; max-height: none; overflow: visible; }
   .plan-links a::after { content: " (" attr(href) ")"; font-weight: 400; }
 }
+
+/* Touches chaleureuses */
+h1, h2, legend, .brand, .score-num { font-family: var(--font-display); font-weight: 600; letter-spacing: -.01em; }
+.brand { font-weight: 700; text-decoration: none; color: var(--text); }
+.btn.primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); filter: none; }
+.btn, .tabs button, .choice, input, select, textarea { border-radius: 12px; }
+.topbar { background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); }
+#progress-bar { background: linear-gradient(90deg, var(--accent), #e59a6b); }
