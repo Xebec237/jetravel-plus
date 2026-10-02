@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-01T21:32:23.228Z",
+ "updatedAt": "2026-10-02T16:26:30.357Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-01T21:32:23.228Z",
+   "at": "2026-10-02T16:26:30.357Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-01T21:32:23.228Z",
+   "at": "2026-10-02T16:26:30.357Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-01T21:32:23.228Z",
-   "info": "922 offres"
+   "at": "2026-10-02T16:26:30.357Z",
+   "info": "960 offres"
   }
  },
  "links": [
@@ -200,6 +200,11 @@
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html",
+   "status": 200,
+   "ok": true
+  },
+  {
+   "url": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2",
    "status": 200,
    "ok": true
   }
