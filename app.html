@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/budget.css">
 </head>
 <body>
 
@@ -20,6 +21,7 @@
     <button type="button" data-tab="cv">3. CV canadien</button>
     <button type="button" data-tab="jobs">4. Emploi &amp; lettre</button>
     <button type="button" data-tab="bot">5. Mon assistant<span id="tab-bot-count"></span></button>
+    <button type="button" data-tab="budget">6. Budget</button>
   </nav>
   <div class="account-slot" id="account-slot"></div>
 </header>
@@ -431,6 +433,8 @@
   <div id="bot-root"></div>
 </section>
 
+<section id="tab-budget" class="tab"><div id="budget-root"></div></section>
+
 </main>
 
 <button type="button" class="bot-fab no-print" data-goto="bot" aria-label="Ouvrir mon assistant">🤖<span class="bot-badge" id="bot-badge" hidden></span></button>
@@ -450,5 +454,6 @@
 <script src="js/cv.js"></script>
 <script src="js/assistant.js"></script>
 <script src="js/app.js"></script>
+<script src="js/budget.js"></script>
 </body>
 </html>
