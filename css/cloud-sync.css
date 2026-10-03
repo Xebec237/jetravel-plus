@@ -1,0 +1,50 @@
+/* Connexion Google + sauvegarde cloud — reprend les couleurs de style.css */
+.gs-slot { display: flex; align-items: center; flex: none; }
+.topbar .gs-slot { margin-left: .5rem; }
+.topbar .account-slot:empty + .gs-slot { margin-left: auto; }
+.lp-nav-in .gs-slot { margin-left: 0; }
+
+.gs-btn {
+  display: inline-flex; align-items: center; gap: .55rem; font: inherit; font-weight: 600; font-size: .9rem;
+  padding: .5rem .9rem; border-radius: 12px; border: 1px solid var(--border); background: var(--surface);
+  color: var(--text); cursor: pointer; box-shadow: 0 1px 2px rgba(80, 50, 30, .05);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.gs-btn:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: var(--shadow); }
+.gs-btn:disabled { opacity: .6; cursor: wait; transform: none; }
+.gs-g { width: 18px; height: 18px; flex: none; }
+.gs-short { display: none; }
+
+.gs-user { display: flex; align-items: center; gap: .5rem; padding: .25rem .3rem .25rem .25rem; border: 1px solid var(--border); border-radius: 99px; background: var(--surface); }
+.gs-ava {
+  position: relative; width: 30px; height: 30px; border-radius: 50%; flex: none; display: grid; place-items: center;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: .9rem;
+}
+.gs-ava img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.gs-dot { position: absolute; right: -2px; bottom: -2px; width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--surface); background: var(--ok); }
+.gs-dot.gs-saving { background: var(--warn); }
+.gs-dot.gs-error { background: var(--accent); }
+.gs-name { font-weight: 600; font-size: .9rem; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gs-out {
+  font: inherit; font-size: .82rem; font-weight: 600; color: var(--muted); background: var(--surface-2);
+  border: 0; border-radius: 99px; padding: .35rem .7rem; cursor: pointer;
+}
+.gs-out:hover { color: var(--accent); }
+
+/* Mobile d'abord : version courte sur petits écrans */
+@media (max-width: 600px) {
+  .gs-long { display: none; }
+  .gs-short { display: inline; }
+  .gs-btn { padding: .45rem .7rem; font-size: .85rem; }
+  .gs-name { display: none; }
+}
+@media print { .gs-slot { display: none !important; } }
+
+/* Barre de la page d'accueil : version courte pour ne pas serrer les liens du menu */
+.lp-nav-in .gs-long { display: none; }
+.lp-nav-in .gs-short { display: none; }
+.lp-nav-in .gs-btn { padding: .5rem; border-radius: 50%; }
+.lp-nav-in .gs-out { display: none; }
+.lp-nav-in .gs-name { display: none; }
+.lp-nav-in:has(> .gs-slot) { gap: 1.1rem; }
+.lp-nav-in:has(> .gs-slot) .lp-links a, .lp-nav-in:has(> .gs-slot) .lp-account, .lp-nav-in:has(> .gs-slot) > .btn { white-space: nowrap; }
