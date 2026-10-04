@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-03T15:00:33.885Z",
+ "updatedAt": "2026-10-04T15:35:37.118Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-03T15:00:33.885Z",
+   "at": "2026-10-04T15:35:37.118Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-03T15:00:33.885Z",
+   "at": "2026-10-04T15:35:37.118Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-03T15:00:33.885Z",
-   "info": "942 offres"
+   "at": "2026-10-04T15:35:37.118Z",
+   "info": "638 offres"
   }
  },
  "links": [
@@ -160,8 +160,8 @@
   },
   {
    "url": "https://liveinnovascotia.com/",
-   "status": 200,
-   "ok": true
+   "status": 0,
+   "ok": false
   },
   {
    "url": "https://www.welcomenb.ca/",
@@ -200,11 +200,6 @@
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html",
-   "status": 200,
-   "ok": true
-  },
-  {
-   "url": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2",
    "status": 200,
    "ok": true
   }
