@@ -218,11 +218,41 @@
     if (dot) { dot.className = `gs-dot gs-${s}`; dot.title = STATUS_TEXT[s]; }
   }
 
+  async function googleEnabled() {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/auth/v1/settings`, { headers: { apikey: SUPABASE_ANON_KEY } });
+      const settings = await res.json();
+      return !!(settings.external && settings.external.google);
+    } catch (e) {
+      return true; // en cas de doute, on laisse Supabase répondre
+    }
+  }
+
+  function toast(text) {
+    let el = document.querySelector('.gs-toast');
+    if (!el) {
+      el = document.createElement('div');
+      el.className = 'gs-toast';
+      el.setAttribute('role', 'status');
+      document.body.appendChild(el);
+    }
+    el.textContent = text;
+    el.classList.add('on');
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove('on'), 6000);
+  }
+
   async function onClick(e) {
     const btn = e.target.closest('[data-gs]');
     if (!btn) return;
     if (btn.dataset.gs === 'login') {
       btn.disabled = true;
+      // Tant que Google n'est pas activé dans Supabase, on prévient au lieu d'afficher une page d'erreur.
+      if (!(await googleEnabled())) {
+        btn.disabled = false;
+        toast('La connexion avec Google sera bientôt disponible. En attendant, vos données restent enregistrées sur cet appareil.');
+        return;
+      }
       const { error } = await sb.auth.signInWithOAuth({
         provider: 'google',
         options: { redirectTo: location.origin + location.pathname },
