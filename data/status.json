@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-04T15:35:37.118Z",
+ "updatedAt": "2026-10-05T19:27:17.647Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-04T15:35:37.118Z",
+   "at": "2026-10-05T19:27:17.647Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-04T15:35:37.118Z",
+   "at": "2026-10-05T19:27:17.647Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-04T15:35:37.118Z",
-   "info": "638 offres"
+   "at": "2026-10-05T19:27:17.647Z",
+   "info": "683 offres"
   }
  },
  "links": [
@@ -160,8 +160,8 @@
   },
   {
    "url": "https://liveinnovascotia.com/",
-   "status": 0,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.welcomenb.ca/",
@@ -185,8 +185,8 @@
   },
   {
    "url": "https://www.immigratenwt.ca/",
-   "status": 200,
-   "ok": true
+   "status": 504,
+   "ok": false
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html",
