@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-10-12T20:03:59.606Z",
+ "updatedAt": "2026-10-13T17:52:48.546Z",
  "draws": [
+  {
+   "number": 448,
+   "date": "2026-10-13",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 752,
+   "crs": 772
+  },
   {
    "number": 447,
    "date": "2026-10-01",
@@ -351,95 +360,86 @@
    "nameEn": "Provincial Nominee Program",
    "size": 324,
    "crs": 786
-  },
-  {
-   "number": 408,
-   "date": "2026-04-02",
-   "key": "trades",
-   "name": "Métiers spécialisés",
-   "nameEn": "Trades Occupations, 2026-Version 3",
-   "size": 3000,
-   "crs": 477
   }
  ],
  "distribution": {
-  "asOf": "September 27, 2026",
-  "total": 229904,
+  "asOf": "October 12, 2026",
+  "total": 229456,
   "ranges": [
    {
     "min": 601,
     "max": 1200,
-    "count": 728
+    "count": 749
    },
    {
     "min": 501,
     "max": 600,
-    "count": 21070
+    "count": 21638
    },
    {
     "min": 491,
     "max": 500,
-    "count": 12745
+    "count": 12136
    },
    {
     "min": 481,
     "max": 490,
-    "count": 12817
+    "count": 12184
    },
    {
     "min": 471,
     "max": 480,
-    "count": 16465
+    "count": 16220
    },
    {
     "min": 461,
     "max": 470,
-    "count": 16257
+    "count": 16221
    },
    {
     "min": 451,
     "max": 460,
-    "count": 14847
+    "count": 14851
    },
    {
     "min": 441,
     "max": 450,
-    "count": 13677
+    "count": 13749
    },
    {
     "min": 431,
     "max": 440,
-    "count": 13419
+    "count": 13474
    },
    {
     "min": 421,
     "max": 430,
-    "count": 12173
+    "count": 12467
    },
    {
     "min": 411,
     "max": 420,
-    "count": 11888
+    "count": 12201
    },
    {
     "min": 401,
     "max": 410,
-    "count": 11454
+    "count": 11637
    },
    {
     "min": 351,
     "max": 400,
-    "count": 47298
+    "count": 47167
    },
    {
     "min": 301,
     "max": 350,
-    "count": 17359
+    "count": 17123
    },
    {
     "min": 0,
     "max": 300,
-    "count": 7707
+    "count": 7639
    }
   ]
  }
