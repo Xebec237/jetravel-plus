@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-10-14T15:39:22.755Z",
+ "updatedAt": "2026-10-15T15:25:34.697Z",
  "draws": [
+  {
+   "number": 449,
+   "date": "2026-10-15",
+   "key": "cec",
+   "name": "Expérience canadienne",
+   "nameEn": "Canadian Experience Class",
+   "size": 2500,
+   "crs": 519
+  },
   {
    "number": 448,
    "date": "2026-10-13",
@@ -351,15 +360,6 @@
    "nameEn": "Canadian Experience Class",
    "size": 2000,
    "crs": 515
-  },
-  {
-   "number": 409,
-   "date": "2026-04-13",
-   "key": "pnp",
-   "name": "Candidats des provinces",
-   "nameEn": "Provincial Nominee Program",
-   "size": 324,
-   "crs": 786
   }
  ],
  "distribution": {
