@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-10-15T15:25:34.697Z",
+ "updatedAt": "2026-10-16T15:05:07.300Z",
  "draws": [
+  {
+   "number": 450,
+   "date": "2026-10-16",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 435
+  },
   {
    "number": 449,
    "date": "2026-10-15",
@@ -351,15 +360,6 @@
    "nameEn": "French-Language proficiency 2026-Version 2",
    "size": 4000,
    "crs": 419
-  },
-  {
-   "number": 410,
-   "date": "2026-04-14",
-   "key": "cec",
-   "name": "Expérience canadienne",
-   "nameEn": "Canadian Experience Class",
-   "size": 2000,
-   "crs": 515
   }
  ],
  "distribution": {
