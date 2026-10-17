@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-16T15:05:07.300Z",
+ "updatedAt": "2026-10-17T14:00:05.243Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-16T15:05:07.300Z",
+   "at": "2026-10-17T14:00:05.243Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-16T15:05:07.300Z",
+   "at": "2026-10-17T14:00:05.243Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-16T15:05:07.300Z",
-   "info": "1027 offres"
+   "at": "2026-10-17T14:00:05.243Z",
+   "info": "982 offres"
   }
  },
  "links": [
@@ -100,8 +100,8 @@
   },
   {
    "url": "https://www.jobbank.gc.ca/",
-   "status": 200,
-   "ok": true
+   "status": 0,
+   "ok": false
   },
   {
    "url": "https://www.guichetemplois.gc.ca/",
