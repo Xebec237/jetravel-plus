@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-17T14:00:05.243Z",
+ "updatedAt": "2026-10-18T14:12:59.925Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-17T14:00:05.243Z",
+   "at": "2026-10-18T14:12:59.925Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-17T14:00:05.243Z",
+   "at": "2026-10-18T14:12:59.925Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-17T14:00:05.243Z",
-   "info": "982 offres"
+   "at": "2026-10-18T14:12:59.925Z",
+   "info": "675 offres"
   }
  },
  "links": [
@@ -100,8 +100,8 @@
   },
   {
    "url": "https://www.jobbank.gc.ca/",
-   "status": 0,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.guichetemplois.gc.ca/",
@@ -140,8 +140,8 @@
   },
   {
    "url": "https://www.welcomebc.ca/immigrate-to-b-c",
-   "status": 200,
-   "ok": true
+   "status": 500,
+   "ok": false
   },
   {
    "url": "https://www.alberta.ca/alberta-advantage-immigration-program",
