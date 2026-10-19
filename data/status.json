@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-18T14:12:59.925Z",
+ "updatedAt": "2026-10-19T17:16:57.623Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-18T14:12:59.925Z",
+   "at": "2026-10-19T17:16:57.623Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-18T14:12:59.925Z",
+   "at": "2026-10-19T17:16:57.623Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-18T14:12:59.925Z",
-   "info": "675 offres"
+   "at": "2026-10-19T17:16:57.623Z",
+   "info": "472 offres"
   }
  },
  "links": [
@@ -140,8 +140,8 @@
   },
   {
    "url": "https://www.welcomebc.ca/immigrate-to-b-c",
-   "status": 500,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.alberta.ca/alberta-advantage-immigration-program",
