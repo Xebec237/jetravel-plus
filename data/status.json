@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-19T17:16:57.623Z",
+ "updatedAt": "2026-10-20T15:30:34.536Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-19T17:16:57.623Z",
+   "at": "2026-10-20T15:30:34.536Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-19T17:16:57.623Z",
+   "at": "2026-10-20T15:30:34.536Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-19T17:16:57.623Z",
-   "info": "472 offres"
+   "at": "2026-10-20T15:30:34.536Z",
+   "info": "817 offres"
   }
  },
  "links": [
@@ -160,8 +160,8 @@
   },
   {
    "url": "https://liveinnovascotia.com/",
-   "status": 200,
-   "ok": true
+   "status": 0,
+   "ok": false
   },
   {
    "url": "https://www.welcomenb.ca/",
