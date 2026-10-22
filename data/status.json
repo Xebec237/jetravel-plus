@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-21T15:46:56.389Z",
+ "updatedAt": "2026-10-22T15:45:22.218Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-21T15:46:56.389Z",
+   "at": "2026-10-22T15:45:22.218Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-21T15:46:56.389Z",
+   "at": "2026-10-22T15:45:22.218Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-21T15:46:56.389Z",
-   "info": "1005 offres"
+   "at": "2026-10-22T15:45:22.218Z",
+   "info": "948 offres"
   }
  },
  "links": [
@@ -50,13 +50,13 @@
   },
   {
    "url": "https://www.lefrancaisdesaffaires.fr/tests-diplomes/test-evaluation-francais-tef/tef-canada/",
-   "status": 503,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.france-education-international.fr/test/tcf-canada",
-   "status": 200,
-   "ok": true
+   "status": 403,
+   "ok": false
   },
   {
    "url": "https://apprendre.tv5monde.com/",
@@ -90,7 +90,7 @@
   },
   {
    "url": "https://college-ic.ca/",
-   "status": 200,
+   "status": 307,
    "ok": true
   },
   {
@@ -160,8 +160,8 @@
   },
   {
    "url": "https://liveinnovascotia.com/",
-   "status": 200,
-   "ok": true
+   "status": 0,
+   "ok": false
   },
   {
    "url": "https://www.welcomenb.ca/",
@@ -185,8 +185,8 @@
   },
   {
    "url": "https://www.immigratenwt.ca/",
-   "status": 200,
-   "ok": true
+   "status": 0,
+   "ok": false
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html",
