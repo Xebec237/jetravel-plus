@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-22T15:45:22.218Z",
+ "updatedAt": "2026-10-23T15:33:41.909Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-22T15:45:22.218Z",
+   "at": "2026-10-23T15:33:41.909Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-22T15:45:22.218Z",
+   "at": "2026-10-23T15:33:41.909Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-22T15:45:22.218Z",
-   "info": "948 offres"
+   "at": "2026-10-23T15:33:41.909Z",
+   "info": "875 offres"
   }
  },
  "links": [
@@ -55,8 +55,8 @@
   },
   {
    "url": "https://www.france-education-international.fr/test/tcf-canada",
-   "status": 403,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://apprendre.tv5monde.com/",
@@ -185,8 +185,8 @@
   },
   {
    "url": "https://www.immigratenwt.ca/",
-   "status": 0,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html",
