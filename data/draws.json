@@ -1,6 +1,24 @@
 {
- "updatedAt": "2026-10-26T17:04:45.543Z",
+ "updatedAt": "2026-10-27T16:07:44.815Z",
  "draws": [
+  {
+   "number": 452,
+   "date": "2026-10-27",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 5000,
+   "crs": 407
+  },
+  {
+   "number": 451,
+   "date": "2026-10-26",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 792,
+   "crs": 761
+  },
   {
    "number": 450,
    "date": "2026-10-16",
@@ -342,104 +360,86 @@
    "nameEn": "Canadian Experience Class",
    "size": 2000,
    "crs": 514
-  },
-  {
-   "number": 412,
-   "date": "2026-04-27",
-   "key": "pnp",
-   "name": "Candidats des provinces",
-   "nameEn": "Provincial Nominee Program",
-   "size": 473,
-   "crs": 795
-  },
-  {
-   "number": 411,
-   "date": "2026-04-15",
-   "key": "french",
-   "name": "Connaissance du français",
-   "nameEn": "French-Language proficiency 2026-Version 2",
-   "size": 4000,
-   "crs": 419
   }
  ],
  "distribution": {
-  "asOf": "October 12, 2026",
-  "total": 229456,
+  "asOf": "October 25, 2026",
+  "total": 228724,
   "ranges": [
    {
     "min": 601,
     "max": 1200,
-    "count": 749
+    "count": 787
    },
    {
     "min": 501,
     "max": 600,
-    "count": 21638
+    "count": 20535
    },
    {
     "min": 491,
     "max": 500,
-    "count": 12136
+    "count": 12162
    },
    {
     "min": 481,
     "max": 490,
-    "count": 12184
+    "count": 12342
    },
    {
     "min": 471,
     "max": 480,
-    "count": 16220
+    "count": 16330
    },
    {
     "min": 461,
     "max": 470,
-    "count": 16221
+    "count": 15803
    },
    {
     "min": 451,
     "max": 460,
-    "count": 14851
+    "count": 14475
    },
    {
     "min": 441,
     "max": 450,
-    "count": 13749
+    "count": 13159
    },
    {
     "min": 431,
     "max": 440,
-    "count": 13474
+    "count": 13155
    },
    {
     "min": 421,
     "max": 430,
-    "count": 12467
+    "count": 12768
    },
    {
     "min": 411,
     "max": 420,
-    "count": 12201
+    "count": 12543
    },
    {
     "min": 401,
     "max": 410,
-    "count": 11637
+    "count": 11880
    },
    {
     "min": 351,
     "max": 400,
-    "count": 47167
+    "count": 47911
    },
    {
     "min": 301,
     "max": 350,
-    "count": 17123
+    "count": 17247
    },
    {
     "min": 0,
     "max": 300,
-    "count": 7639
+    "count": 7627
    }
   ]
  }
