@@ -1,6 +1,13 @@
 {
- "updatedAt": "2026-10-28T16:55:23.184Z",
+ "updatedAt": "2026-10-29T17:13:17.561Z",
  "items": [
+  {
+   "title": "Nouvelles sanctions visant les représentants frauduleux et non autorisés en immigration et en citoyenneté",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/10/nouvelles-sanctions-visant-les-representants-frauduleux-et-non-autorises-en-immigration-et-en-citoyennete.html",
+   "date": "2026-10-28",
+   "summary": "Le gouvernement du Canada est déterminé à préserver l’intégrité de ses systèmes d’immigration et de citoyenneté et à protéger les demandeurs contre la fraude et l’exploitation. Pour aider à protéger les demandeurs contre les personnes qui chercheraient à profiter d’eux, de nouvel",
+   "relevant": true
+  },
   {
    "title": "Le Canada réoriente le système Entrée express vers les travailleurs qualifiés qui stimulent l’économie",
    "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/10/le-canada-reoriente-le-systeme-entree-express-vers-les-travailleurs-qualifies-qui-stimulent-leconomie.html",
@@ -168,13 +175,6 @@
    "date": "2026-07-03",
    "summary": "L’honorable Lena Metlege Diab, ministre de l’Immigration, des Réfugiés et de la Citoyenneté, tiendra une conférence de presse à Winnipeg afin de dévoiler un projet novateur visant à renforcer l’immigration francophone au Manitoba. Un point de presse suivra.",
    "relevant": true
-  },
-  {
-   "title": "Déclaration de la ministre Metlege Diab à l’occasion de la fête du Canada",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/06/declaration-de-la-ministre-metlege-diab-a-loccasion-de-la-fete-du-canada.html",
-   "date": "2026-07-01",
-   "summary": "« Chaque année, à l’occasion de la fête du Canada, je mesure la chance que nous avons de pouvoir considérer ce pays comme notre foyer, un lieu où la diversité est célébrée, où nos valeurs communes nous unissent et où notre identité collective prend vie à travers nos langues offic",
-   "relevant": false
   }
  ]
 }
