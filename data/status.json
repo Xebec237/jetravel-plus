@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-30T16:54:13.127Z",
+ "updatedAt": "2026-10-31T15:55:30.201Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-10-30T16:54:13.127Z",
+   "at": "2026-10-31T15:55:30.201Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-10-30T16:54:13.127Z",
+   "at": "2026-10-31T15:55:30.201Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-10-30T16:54:13.127Z",
-   "info": "913 offres"
+   "at": "2026-10-31T15:55:30.201Z",
+   "info": "827 offres"
   }
  },
  "links": [
@@ -125,8 +125,8 @@
   },
   {
    "url": "https://www.quebecemploi.gouv.qc.ca/",
-   "status": 200,
-   "ok": true
+   "status": 503,
+   "ok": false
   },
   {
    "url": "https://www.jobillico.com/",
