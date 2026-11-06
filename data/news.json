@@ -1,16 +1,30 @@
 {
- "updatedAt": "2026-11-05T18:24:37.002Z",
+ "updatedAt": "2026-11-06T17:45:58.656Z",
  "items": [
   {
+   "title": "IRCC tiendra une séance d’information technique à l’intention des médias sur les niveaux d’immigration",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/ircc-tiendra-une-seance-dinformation-technique-a-lintention-des-medias-sur-les-niveaux-dimmigration.html",
+   "date": "2026-11-05",
+   "summary": "IRCC tiendra une séance d’information technique à l’intention des médias sur les niveaux d’immigration",
+   "relevant": true
+  },
+  {
+   "title": "Construire un Canada plus fort grâce à un système d’immigration bien géré et prévisible",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/construire-un-canada-plus-fort-grace-a-un-systeme-dimmigration-bien-gere-et-previsible.html",
+   "date": "2026-11-05",
+   "summary": "Un système d’immigration bien géré, efficace et adapté à nos besoins économiques est essentiel pour renforcer le Canada. Chaque année, le Canada dépose un plan des niveaux d’immigration décrivant les cibles d’admissions de résidents temporaires et permanents pour les trois années",
+   "relevant": true
+  },
+  {
    "title": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun0.html",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun.html",
    "date": "2026-11-03",
    "summary": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
    "relevant": false
   },
   {
    "title": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun.html",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun0.html",
    "date": "2026-11-03",
    "summary": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
    "relevant": false
@@ -160,20 +174,6 @@
    "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/le-canada-et-les-territoires-du-nord-ouest-sallient-pour-soutenir-la-croissance-des-communautes-francophones.html",
    "date": "2026-07-08",
    "summary": "Le Canada fait de l’immigration francophone une force qui unit les communautés et reconnaît la contribution des nouveaux arrivants d’expression française et bilingues au rayonnement de la Francophonie. En ce sens, afin de favoriser le développement démographique et économique des",
-   "relevant": true
-  },
-  {
-   "title": "Le député Peter Fragiskatos souligne le lancement de la Stratégie nationale de sécurité alimentaire",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/le-depute-peter-fragiskatos-souligne-le-lancement-de-la-strategie-nationale-de-securite-alimentaire.html",
-   "date": "2026-07-06",
-   "summary": "Le gouvernement du Canada s’efforce de renforcer l’économie et de rendre la vie plus abordable pour la population canadienne. Aujourd’hui, Peter Fragiskatos, secrétaire parlementaire de la ministre de l’Immigration, des Réfugiés et de la Citoyenneté, au nom de l’honorable Heath M",
-   "relevant": true
-  },
-  {
-   "title": "Projets visant à soutenir les communautés francophones en situation minoritaire",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/projets-visant-a-soutenir-les-communautes-francophones-en-situation-minoritaire.html",
-   "date": "2026-07-06",
-   "summary": "Le Centre d’innovation en immigration francophone (CIIF) vise à intégrer les perspectives francophones dans les programmes d’immigration au Canada. Il promeut l’immigration auprès des employeurs francophones, facilite l’accès aux programmes et soutient la croissance des communaut",
    "relevant": true
   }
  ]
