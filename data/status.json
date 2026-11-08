@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-07T16:41:34.974Z",
+ "updatedAt": "2026-11-08T16:52:44.789Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-11-07T16:41:34.974Z",
+   "at": "2026-11-08T16:52:44.789Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-11-07T16:41:34.974Z",
+   "at": "2026-11-08T16:52:44.789Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-11-07T16:41:34.974Z",
-   "info": "899 offres"
+   "at": "2026-11-08T16:52:44.789Z",
+   "info": "602 offres"
   }
  },
  "links": [
@@ -115,8 +115,8 @@
   },
   {
    "url": "https://www.linkedin.com/jobs/",
-   "status": 429,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.linkedin.com/",
