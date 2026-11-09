@@ -1,6 +1,20 @@
 {
- "updatedAt": "2026-11-08T16:52:44.789Z",
+ "updatedAt": "2026-11-09T21:13:45.518Z",
  "items": [
+  {
+   "title": "Aperçu du Programme d’immigration dans les communautés rurales",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/apercu-du-programme-dimmigration-dans-les-communautes-rurales.html",
+   "date": "2026-11-09",
+   "summary": "Le Gouvernement du Canada est conscient que les communautés rurales et éloignées affrontent des défis uniques liés au marché du travail et sur le plan démographique qui peuvent avoir une incidence sur leur croissance économique, notamment le déclin de la population, le vieillisse",
+   "relevant": true
+  },
+  {
+   "title": "Le Canada crée une voie d’accès à l’immigration permanente pour aider les communautés rurales à attirer et à retenir des talents",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-cree-une-voie-dacces-a-limmigration-permanente-pour-aider-les-communautes-rurales-a-attirer-et-a-retenir-des-talents0.html",
+   "date": "2026-11-09",
+   "summary": "Comme il a été annoncé dans le Budget de 2026, le Canada réoriente l’immigration là où elle peut le mieux soutenir l’économie, y compris dans les communautés de petite taille, rurales et éloignées qui font face à des pénuries persistantes de main-d’œuvre.",
+   "relevant": true
+  },
   {
    "title": "La ministre Metlege Diab fera une annonce visant à attirer et à garder les talents qualifiés dans les collectivités rurales et éloignées",
    "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/la-ministre-metlege-diab-fera-une-annonce-visant-a-attirer-et-a-garder-les-talents-qualifies-dans-les-collectivites-rurales-et-eloignees.html",
@@ -24,14 +38,14 @@
   },
   {
    "title": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun.html",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun0.html",
    "date": "2026-11-03",
    "summary": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
    "relevant": false
   },
   {
    "title": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun0.html",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-modernise-son-systeme-doctroi-de-lasile-afin-dappuyer-la-prise-de-decisions-en-temps-opportun.html",
    "date": "2026-11-03",
    "summary": "Le Canada modernise son système d’octroi de l’asile afin d’appuyer la prise de décisions en temps opportun",
    "relevant": false
@@ -161,20 +175,6 @@
    "date": "2026-07-20",
    "summary": "Le gouvernement du Canada allège la charge financière des familles en augmentant l’Allocation canadienne pour enfants (ACE). L’ACE est un paiement mensuel non imposable visant à les aider à subvenir aux besoins des enfants.",
    "relevant": false
-  },
-  {
-   "title": "La ministre Metlege Diab soulignera le soutien plus généreux offert aux familles grâce à l’Allocation canadienne pour enfants",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/la-ministre-metlege-diab-soulignera-le-soutien-plus-genereux-offert-aux-familles-grace-a-lallocation-canadienne-pour-enfants.html",
-   "date": "2026-07-17",
-   "summary": "La ministre Metlege Diab soulignera le soutien plus généreux offert aux familles grâce à l’Allocation canadienne pour enfants",
-   "relevant": false
-  },
-  {
-   "title": "Projets visant à soutenir les communautés francophones en situation minoritaire",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/projets-visant-a-soutenir-les-communautes-francophones-en-situation-minoritaire0.html",
-   "date": "2026-07-08",
-   "summary": "Le Centre d’innovation en immigration francophone (CIIF) vise à intégrer les perspectives francophones dans les programmes d’immigration au Canada. Il promeut l’immigration auprès des employeurs francophones, facilite l’accès aux programmes et soutient la croissance des communaut",
-   "relevant": true
   }
  ]
 }
