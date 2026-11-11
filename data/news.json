@@ -1,6 +1,27 @@
 {
- "updatedAt": "2026-11-10T18:23:47.523Z",
+ "updatedAt": "2026-11-11T18:15:27.062Z",
  "items": [
+  {
+   "title": "La ministre Metlege Diab fera une annonce à Dieppe",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/la-ministre-metlege-diab-fera-une-annonce-a-dieppe.html",
+   "date": "2026-11-10",
+   "summary": "La ministre Metlege Diab fera une annonce à Dieppe",
+   "relevant": false
+  },
+  {
+   "title": "Le secrétaire parlementaire Peter Fragiskatos fera une annonce soulignant les investissements du Budget 2026",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-secretaire-parlementaire-peter-fragiskatos-fera-une-annonce-soulignant-les-investissements-du-budget-2026.html",
+   "date": "2026-11-10",
+   "summary": "Peter Fragiskatos, secrétaire parlementaire du ministre de l’Immigration, des Réfugiés et de la Citoyenneté, fera une annonce pour présenter les investissements du budget fédéral visant à bâtir une économie plus forte, plus indépendante et plus résiliente, tout en rendant la vie ",
+   "relevant": true
+  },
+  {
+   "title": "Le Canada prend des mesures pour traiter efficacement les demandes de résidence permanente existantes des Ukrainiens et des Hongkongais",
+   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/le-canada-prend-des-mesures-pour-traiter-efficacement-les-demandes-de-residence-permanente-existantes-des-ukrainiens-et-des-hongkongais.html",
+   "date": "2026-11-10",
+   "summary": "Le Plan des niveaux d’immigration du Canada de 2027-2029 s’appuie sur les progrès réalisés par le gouvernement pour reprendre le contrôle du système d’immigration et ramener l’immigration à un niveau viable. Il assure également l’efficacité et l’intégrité du système d’immigration",
+   "relevant": true
+  },
   {
    "title": "La ministre Metlege Diab présente les investissements prévus dans le Budget de 2026 en matière de culture, de créativité et d’accès aux arts",
    "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/11/la-ministre-metlege-diab-presente-les-investissements-prevus-dans-le-budget-de-2026-en-matiere-de-culture-de-creativite-et-dacces-aux-arts.html",
@@ -153,27 +174,6 @@
    "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/09/la-ministre-metlege-diab-mettra-en-avant-la-prolongation-de-lallegement-de-la-taxe-daccise-federale-sur-lessence-le-diesel-et-les-carburants-daviat.html",
    "date": "2026-09-08",
    "summary": "Le monde change rapidement. Les États-Unis imposent de nouveaux droits de douane au Canada, qui ont pour but de nuire à notre économie et de semer la division parmi nous. En parallèle, les conflits en Europe et au Moyen-Orient font grimper les prix dans le monde entier. En répons",
-   "relevant": false
-  },
-  {
-   "title": "La ministre Metlege Diab mettra en avant la prolongation de l’allègement de la taxe d’accise fédérale sur l’essence, le diesel et les carburants d’aviation pour les Canadiens",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/09/la-ministre-metlege-diab-mettra-en-avant-la-prolongation-de-lallegement-de-la-taxe-federale-daccise-sur-lessence-le-diesel-et-les-carburants-daviat.html",
-   "date": "2026-09-04",
-   "summary": "La ministre Metlege Diab mettra en avant la prolongation de l’allègement de la taxe fédérale d’accise sur l’essence, le diesel et les carburants d’aviation pour les Canadiens",
-   "relevant": false
-  },
-  {
-   "title": "Le Canada étend le renouvellement en ligne du passeport à tous les adultes admissibles (Toronto)",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/le-canada-etend-le-renouvellement-en-ligne-du-passeport-a-tous-les-adultes-admissibles0.html",
-   "date": "2026-07-29",
-   "summary": "Le gouvernement du Canada s’engage à rendre la vie des Canadiennes et des Canadiens plus simple et plus pratique. Cela passe notamment par la mise en place d’un programme de passeport moderne offrant des services numériques sécurisés et conviviaux qui permettent de gagner du temp",
-   "relevant": false
-  },
-  {
-   "title": "Le Canada étend le renouvellement en ligne du passeport à tous les adultes admissibles",
-   "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/nouvelles/2026/07/le-canada-etend-le-renouvellement-en-ligne-du-passeport-a-tous-les-adultes-admissibles.html",
-   "date": "2026-07-28",
-   "summary": "Le gouvernement du Canada s’engage à rendre la vie des Canadiennes et des Canadiens plus simple et plus pratique. Cela passe notamment par la mise en place d’un programme de passeport moderne offrant des services numériques sécurisés et conviviaux qui permettent de gagner du temp",
    "relevant": false
   }
  ]
