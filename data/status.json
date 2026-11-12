@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-11T18:15:27.062Z",
+ "updatedAt": "2026-11-12T18:39:45.255Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-11-11T18:15:27.062Z",
+   "at": "2026-11-12T18:39:45.255Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-11-11T18:15:27.062Z",
+   "at": "2026-11-12T18:39:45.255Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-11-11T18:15:27.062Z",
-   "info": "948 offres"
+   "at": "2026-11-12T18:39:45.255Z",
+   "info": "860 offres"
   }
  },
  "links": [
@@ -185,8 +185,8 @@
   },
   {
    "url": "https://www.immigratenwt.ca/",
-   "status": 200,
-   "ok": true
+   "status": 504,
+   "ok": false
   },
   {
    "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/02/canada-prioritizes-top-talent-in-2026-immigration-express-entry-categories.html",
