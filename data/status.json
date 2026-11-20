@@ -1,21 +1,20 @@
 {
- "updatedAt": "2026-11-19T19:16:39.628Z",
+ "updatedAt": "2026-11-20T18:55:31.449Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-11-19T19:16:39.628Z",
+   "at": "2026-11-20T18:55:31.449Z",
    "info": "40 tirages"
   },
   "news": {
-   "ok": false,
-   "at": "2026-11-19T19:16:39.628Z",
-   "error": "HTTP 502 pour https://api.io.canada.ca/io-server/gc/news/fr/v2?dept=departmentofcitizenshipandimmigration&sort=publishedDate&orderBy=desc&pick=25&format=atom&atomtitle=IRCC",
-   "lastSuccess": "2026-11-18T19:12:37.054Z"
+   "ok": true,
+   "at": "2026-11-20T18:55:31.449Z",
+   "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-11-19T19:16:39.628Z",
-   "info": "944 offres"
+   "at": "2026-11-20T18:55:31.449Z",
+   "info": "932 offres"
   }
  },
  "links": [
