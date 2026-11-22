@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-21T17:50:51.579Z",
+ "updatedAt": "2026-11-22T18:10:07.203Z",
  "sources": {
   "draws": {
    "ok": true,
-   "at": "2026-11-21T17:50:51.579Z",
+   "at": "2026-11-22T18:10:07.203Z",
    "info": "40 tirages"
   },
   "news": {
    "ok": true,
-   "at": "2026-11-21T17:50:51.579Z",
+   "at": "2026-11-22T18:10:07.203Z",
    "info": "25 annonces"
   },
   "jobs": {
    "ok": true,
-   "at": "2026-11-21T17:50:51.579Z",
-   "info": "767 offres"
+   "at": "2026-11-22T18:10:07.203Z",
+   "info": "433 offres"
   }
  },
  "links": [
@@ -115,8 +115,8 @@
   },
   {
    "url": "https://www.linkedin.com/jobs/",
-   "status": 429,
-   "ok": false
+   "status": 200,
+   "ok": true
   },
   {
    "url": "https://www.linkedin.com/",
@@ -185,7 +185,7 @@
   },
   {
    "url": "https://www.immigratenwt.ca/",
-   "status": 0,
+   "status": 504,
    "ok": false
   },
   {
