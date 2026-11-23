@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-11-22T18:10:07.203Z",
+ "updatedAt": "2026-11-23T22:20:52.007Z",
  "draws": [
+  {
+   "number": 454,
+   "date": "2026-11-23",
+   "key": "pnp",
+   "name": "Candidats des provinces",
+   "nameEn": "Provincial Nominee Program",
+   "size": 1999,
+   "crs": 673
+  },
   {
    "number": 453,
    "date": "2026-10-28",
@@ -351,95 +360,86 @@
    "nameEn": "Provincial Nominee Program",
    "size": 380,
    "crs": 798
-  },
-  {
-   "number": 414,
-   "date": "2026-04-29",
-   "key": "french",
-   "name": "Connaissance du français",
-   "nameEn": "French-Language proficiency 2026-Version 2",
-   "size": 4000,
-   "crs": 400
   }
  ],
  "distribution": {
-  "asOf": "October 25, 2026",
-  "total": 228724,
+  "asOf": "November 22, 2026",
+  "total": 238692,
   "ranges": [
    {
     "min": 601,
     "max": 1200,
-    "count": 787
+    "count": 2068
    },
    {
     "min": 501,
     "max": 600,
-    "count": 20535
+    "count": 43754
    },
    {
     "min": 491,
     "max": 500,
-    "count": 12162
+    "count": 11199
    },
    {
     "min": 481,
     "max": 490,
-    "count": 12342
+    "count": 12464
    },
    {
     "min": 471,
     "max": 480,
-    "count": 16330
+    "count": 15296
    },
    {
     "min": 461,
     "max": 470,
-    "count": 15803
+    "count": 14435
    },
    {
     "min": 451,
     "max": 460,
-    "count": 14475
+    "count": 13416
    },
    {
     "min": 441,
     "max": 450,
-    "count": 13159
+    "count": 12147
    },
    {
     "min": 431,
     "max": 440,
-    "count": 13155
+    "count": 11716
    },
    {
     "min": 421,
     "max": 430,
-    "count": 12768
+    "count": 10611
    },
    {
     "min": 411,
     "max": 420,
-    "count": 12543
+    "count": 10522
    },
    {
     "min": 401,
     "max": 410,
-    "count": 11880
+    "count": 11265
    },
    {
     "min": 351,
     "max": 400,
-    "count": 47911
+    "count": 45934
    },
    {
     "min": 301,
     "max": 350,
-    "count": 17247
+    "count": 16627
    },
    {
     "min": 0,
     "max": 300,
-    "count": 7627
+    "count": 7238
    }
   ]
  }
