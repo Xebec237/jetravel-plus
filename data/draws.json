@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-11-24T20:57:07.051Z",
+ "updatedAt": "2026-11-25T20:19:18.823Z",
  "draws": [
+  {
+   "number": 455,
+   "date": "2026-11-25",
+   "key": "french",
+   "name": "Connaissance du français",
+   "nameEn": "French-Language proficiency 2026-Version 2",
+   "size": 6000,
+   "crs": 401
+  },
   {
    "number": 454,
    "date": "2026-11-23",
@@ -351,15 +360,6 @@
    "nameEn": "Provincial Nominee Program",
    "size": 334,
    "crs": 805
-  },
-  {
-   "number": 415,
-   "date": "2026-05-11",
-   "key": "pnp",
-   "name": "Candidats des provinces",
-   "nameEn": "Provincial Nominee Program",
-   "size": 380,
-   "crs": 798
   }
  ],
  "distribution": {
