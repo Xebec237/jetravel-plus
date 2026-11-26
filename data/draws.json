@@ -1,6 +1,15 @@
 {
- "updatedAt": "2026-11-25T20:19:18.823Z",
+ "updatedAt": "2026-11-26T19:55:53.246Z",
  "draws": [
+  {
+   "number": 456,
+   "date": "2026-11-26",
+   "key": "stem",
+   "name": "STIM",
+   "nameEn": "STEM occupations, 2026-Version 3",
+   "size": 600,
+   "crs": 547
+  },
   {
    "number": 455,
    "date": "2026-11-25",
@@ -351,15 +360,6 @@
    "nameEn": "Canadian Experience Class",
    "size": 3000,
    "crs": 518
-  },
-  {
-   "number": 416,
-   "date": "2026-05-25",
-   "key": "pnp",
-   "name": "Candidats des provinces",
-   "nameEn": "Provincial Nominee Program",
-   "size": 334,
-   "crs": 805
   }
  ],
  "distribution": {
